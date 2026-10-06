@@ -1,0 +1,37 @@
+[
+  {
+    "experiment": "exp2_gamma7",
+    "best_matching_decoded_epoch": 92,
+    "mae_0_to_255": 0.004759933774834437,
+    "second_best_epoch": 93,
+    "second_best_mae": 1.5632243377483444
+  },
+  {
+    "experiment": "exp12_fashion_mnist",
+    "best_matching_decoded_epoch": 57,
+    "mae_0_to_255": 0.005794701986754967,
+    "second_best_epoch": 50,
+    "second_best_mae": 2.109478476821192
+  },
+  {
+    "experiment": "exp16_oasis_coronal_128",
+    "best_matching_decoded_epoch": 7,
+    "mae_0_to_255": 2.8915105250983114e-05,
+    "second_best_epoch": 6,
+    "second_best_mae": 2.659669211195929
+  },
+  {
+    "experiment": "exp17_oasis_axial_128",
+    "best_matching_decoded_epoch": 2,
+    "mae_0_to_255": 0.0,
+    "second_best_epoch": 3,
+    "second_best_mae": 10.59322229932917
+  },
+  {
+    "experiment": "exp18_oasis_sagittal_128",
+    "best_matching_decoded_epoch": 9,
+    "mae_0_to_255": 0.00028915105250983114,
+    "second_best_epoch": 11,
+    "second_best_mae": 2.4209171871385613
+  }
+]

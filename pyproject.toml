@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "torch-tvae"
-version = "0.1.0"
+version = "0.2.0"
 description = "Student-t latent priors and label-free VAEs with analytic Gaussian-Gamma regularization"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -21,6 +21,7 @@ classifiers = [
 
 [project.optional-dependencies]
 examples = ["torchvision>=0.16"]
+experiments = ["torchvision>=0.16", "numpy", "scipy", "scikit-learn", "pandas", "matplotlib", "pillow"]
 dev = ["build>=1", "twine>=5"]
 
 [project.urls]

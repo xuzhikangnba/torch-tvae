@@ -2,7 +2,7 @@ cff-version: 1.2.0
 message: "Please cite this software and the associated paper when using this implementation."
 type: software
 title: "torch-tvae: Student-t VAEs via Gaussian-Gamma scale mixtures"
-version: 0.1.0
+version: 0.2.0
 authors:
   - family-names: Xu
     given-names: Zhikang

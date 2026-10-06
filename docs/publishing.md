@@ -2,6 +2,12 @@
 
 Target GitHub repository: https://github.com/xuzhikangnba/torch-tvae
 
+The 0.2.0 candidate includes the paper's original multi-cluster models and a
+completed audit. Exact paper reproduction remains unresolved; see
+reproduction.md. Do not describe installation or unit-test success as full
+benchmark reproduction. The current release is staged locally pending the
+author's decision on those documented discrepancies.
+
 The arXiv manuscript is handled separately, using the accepted final source
 supplied by the authors. Add its identifier to README and CITATION.cff after
 the preprint is available. Do not invent an arXiv ID or DOI.
@@ -13,14 +19,14 @@ Push the tested source and tag the release after verifying CI. Keep datasets,
 checkpoints, local environments, and credentials outside the repository.
 
 ```bash
-git remote add origin https://github.com/xuzhikangnba/torch-tvae.git
+git remote set-url origin https://github.com/xuzhikangnba/torch-tvae.git
 git push -u origin main
-git tag v0.1.0
-git push origin v0.1.0
+git tag v0.2.0
+git push origin v0.2.0
 ```
 
 Use the source install command in README until the PyPI release is published.
-For reproducibility, users may pin the Git revision or the v0.1.0 tag.
+For reproducibility, users may pin the Git revision or the v0.2.0 tag.
 
 ## Build and inspect
 
@@ -44,7 +50,7 @@ index is only used for this distribution.
 
 ```bash
 python -m twine upload --repository testpypi dist/*
-python -m pip install --index-url https://test.pypi.org/simple/ --no-deps torch-tvae==0.1.0
+python -m pip install --index-url https://test.pypi.org/simple/ --no-deps torch-tvae==0.2.0
 ```
 
 After that validation, the author can publish the same artifacts to PyPI:

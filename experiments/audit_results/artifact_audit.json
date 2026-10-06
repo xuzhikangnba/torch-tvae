@@ -1,0 +1,20 @@
+{
+  "paper_path": "paper/20261006/neurips_2026.tex",
+  "paper_sha256": "2a77a16ff6252f272e6fb9e3d07f7c9a447c60ae5dce6ee0cfe06aa8aab9115d",
+  "raw_logs_verified": 826,
+  "table_cells_verified": 91,
+  "table_cells_checked": 91,
+  "psnr_cluster_images_recomputed": 126,
+  "stage_ACC_targets_recovered": true,
+  "prior_audit_correction": "0.798/0.555 are native stage scores, not refit GMM scores; earlier audit compared the wrong columns",
+  "checkpoint_epoch_matches": 0,
+  "checkpoints_checked": 40,
+  "checkpoint_epoch_inference": "Batchnorm counters / training batches per epoch, assuming unchanged batch size and workflow",
+  "verified_scope": "Archive aggregation and per-image PSNR recomputation. Fresh checkpoint evaluation reported separately.",
+  "full_paper_reproduction_passed": false,
+  "unresolved": [
+    "Manuscript Adam / 50 pretraining epochs / 500 iterations differs from archived AdamW / 100 epochs / no pretraining",
+    "Selected-epoch checkpoints and historical stochastic-noise RNG states are not all available",
+    "Historical PSNR uses 128x127 cropped montage cells against method-specific clean atlases"
+  ]
+}

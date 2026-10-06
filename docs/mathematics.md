@@ -79,10 +79,14 @@ over unchanged as if the two objectives were identical: at batch size B the
 reference relative coefficient corresponds to 5/B after dividing its total
 loss by B. The new default is beta=1.
 
-This package implements the underlying construction and a new basic t-VAE
-interface. It is not an unchanged wrapper around the paper's experiment
-scripts, and it does not claim to reproduce multi-component clustering
-tables. Keep exact experiment reproduction in a separately versioned release.
+The `TVAE` interface implements the underlying construction as a basic t-VAE.
+Since 0.2.0, `tvae.reference.TVaDE28` and `TVaDE128` separately expose the
+archived multi-component models without changing their parameters or loss.
+The archived model freezes the sampled Student-t responsibilities during each
+gradient calculation. Its three analytic KL terms do not imply that the
+nonlinear reconstruction expectation is analytic. The reference models retain
+their original epsilon conventions; the numerical conventions below describe
+the basic `StudentTPrior` interface. See reproduction.md for validation limits.
 
 ## Numerical conventions
 

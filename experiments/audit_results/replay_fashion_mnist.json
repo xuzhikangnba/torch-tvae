@@ -1,0 +1,34 @@
+{
+  "dataset": "fashion_mnist",
+  "gamma": 0.12,
+  "seed": 42,
+  "device": "cpu",
+  "package_model": "tvae.reference.model28",
+  "checkpoint_sha256": "0dbffccb1f25a197a592daf15fc3539184a697ef96c54c177e21d1d4b7ac0a2c",
+  "samples_train": 48000,
+  "samples_test": 12000,
+  "batchnorm_training_batches": [
+    85500
+  ],
+  "inferred_training_epochs": [
+    57.0
+  ],
+  "inference": "Epoch inferred from batchnorm counters assuming unchanged batch size and one train pass per epoch",
+  "metrics": {
+    "test_stage_size_entropy": 0.9567,
+    "test_refit_size_entropy": 0.981,
+    "test_stage_silhouette": 0.1504,
+    "test_refit_silhouette": 0.1395,
+    "test_stage_davies_bouldin": 1.5848,
+    "test_refit_davies_bouldin": 1.9429,
+    "test_refit_accuracy": 0.5595,
+    "test_refit_nmi": 0.5889530213538062,
+    "test_refit_ari": 0.4250161881367437,
+    "test_stage_accuracy": 0.5275,
+    "test_stage_nmi": 0.563305281389064,
+    "test_stage_ari": 0.37458036554726143
+  },
+  "evaluation": "Fresh fixed-seed evaluation; historic stochastic noise/RNG state was not stored",
+  "torch_version": "2.11.0+cu130",
+  "numpy_version": "2.4.6"
+}

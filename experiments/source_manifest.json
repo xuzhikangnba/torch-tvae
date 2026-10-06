@@ -1,0 +1,586 @@
+[
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/config.py",
+    "destination": "experiments/reference/mnist/v4.1_tVaDE_ModeB/config.py",
+    "source_sha256": "0126060a8d764ea782448f6ce0dacf85c4e1a8734e7fbbef96ebc7d4b6277306",
+    "staged_sha256": "0126060a8d764ea782448f6ce0dacf85c4e1a8734e7fbbef96ebc7d4b6277306",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/data/__init__.py",
+    "destination": "experiments/reference/mnist/v4.1_tVaDE_ModeB/data/__init__.py",
+    "source_sha256": "3464edf1caaca5b8fd5c0396651dc04ca913f5ae4d5d2edb38470ee62471f993",
+    "staged_sha256": "3464edf1caaca5b8fd5c0396651dc04ca913f5ae4d5d2edb38470ee62471f993",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/data/data_utils.py",
+    "destination": "experiments/reference/mnist/v4.1_tVaDE_ModeB/data/data_utils.py",
+    "source_sha256": "3dde872e296aefd40ee7351ee34dfd4fefca8f857ad653822e5c5cf918aea6c6",
+    "staged_sha256": "3dde872e296aefd40ee7351ee34dfd4fefca8f857ad653822e5c5cf918aea6c6",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/models/__init__.py",
+    "destination": "experiments/reference/mnist/v4.1_tVaDE_ModeB/models/__init__.py",
+    "source_sha256": "b51efb7b3481474346b108316cc849e62f9484a4d70a209a7f068fdec14aaf61",
+    "staged_sha256": "b51efb7b3481474346b108316cc849e62f9484a4d70a209a7f068fdec14aaf61",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/models/vae.py",
+    "destination": "experiments/reference/mnist/v4.1_tVaDE_ModeB/models/vae.py",
+    "source_sha256": "45cc4eae53ddb5e529c3d8b292ef81f5a56d766bb23aca5e310cd6c629a525b2",
+    "staged_sha256": "45cc4eae53ddb5e529c3d8b292ef81f5a56d766bb23aca5e310cd6c629a525b2",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/train.py",
+    "destination": "experiments/reference/mnist/v4.1_tVaDE_ModeB/train.py",
+    "source_sha256": "150214e77ff0fbed1439465336d82d1a2df0717763366049e6255e6ccc45004a",
+    "staged_sha256": "150214e77ff0fbed1439465336d82d1a2df0717763366049e6255e6ccc45004a",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/training/__init__.py",
+    "destination": "experiments/reference/mnist/v4.1_tVaDE_ModeB/training/__init__.py",
+    "source_sha256": "11ef7fd1e1e93ac2199d47bd1d7957baa0ffd09412ac9efd4ee6e5c5af2465a9",
+    "staged_sha256": "11ef7fd1e1e93ac2199d47bd1d7957baa0ffd09412ac9efd4ee6e5c5af2465a9",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/training/trainer.py",
+    "destination": "experiments/reference/mnist/v4.1_tVaDE_ModeB/training/trainer.py",
+    "source_sha256": "08ec98b001bd8e8f4f958891a438fb6d4a4de4d0671d3ba103cf8f9b65a2307e",
+    "staged_sha256": "08ec98b001bd8e8f4f958891a438fb6d4a4de4d0671d3ba103cf8f9b65a2307e",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/utils/__init__.py",
+    "destination": "experiments/reference/mnist/v4.1_tVaDE_ModeB/utils/__init__.py",
+    "source_sha256": "fc1b73510665a8960d2ebae95095ece05fc52a21c8d3a94d374971b7dc85b4fd",
+    "staged_sha256": "fc1b73510665a8960d2ebae95095ece05fc52a21c8d3a94d374971b7dc85b4fd",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/utils/clustering.py",
+    "destination": "experiments/reference/mnist/v4.1_tVaDE_ModeB/utils/clustering.py",
+    "source_sha256": "fe9ec0a2a20ee5e84aa4bbb4e555446383af212ecc1927352c71bc38dd0c7e44",
+    "staged_sha256": "fe9ec0a2a20ee5e84aa4bbb4e555446383af212ecc1927352c71bc38dd0c7e44",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/utils/compute_profile.py",
+    "destination": "experiments/reference/mnist/v4.1_tVaDE_ModeB/utils/compute_profile.py",
+    "source_sha256": "65b77b535b46b45baaf2cf7eb7f268ca0b77f2f4878826d5d648ea56463f5d3a",
+    "staged_sha256": "65b77b535b46b45baaf2cf7eb7f268ca0b77f2f4878826d5d648ea56463f5d3a",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/utils/general.py",
+    "destination": "experiments/reference/mnist/v4.1_tVaDE_ModeB/utils/general.py",
+    "source_sha256": "91d48d7251734afff3a465c4f526f6421103dd0da2da1d861cc0f302fca488ca",
+    "staged_sha256": "91d48d7251734afff3a465c4f526f6421103dd0da2da1d861cc0f302fca488ca",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/utils/visualization.py",
+    "destination": "experiments/reference/mnist/v4.1_tVaDE_ModeB/utils/visualization.py",
+    "source_sha256": "11f72c314b98f42cbf03dad01b73170947687d7cd9dbe334ad4fd61c54101612",
+    "staged_sha256": "22e057701bc93b3bdcf71a403c7229b7e33574c0acb5aa7231df8980643dbc2b",
+    "adaptations": [
+      "Use pyplot.get_cmap for current Matplotlib compatibility; visualization only"
+    ]
+  },
+  {
+    "source": "exp2_gamma7/robustness_eval/noise_utils.py",
+    "destination": "experiments/reference/mnist/robustness_eval/noise_utils.py",
+    "source_sha256": "fa332c19ff29c9138ee6fcced0f37fb32e3c990e5df944d2b49b02bec13fd817",
+    "staged_sha256": "fa332c19ff29c9138ee6fcced0f37fb32e3c990e5df944d2b49b02bec13fd817",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/robustness_eval/v4.1/train_noisy.py",
+    "destination": "experiments/reference/mnist/robustness_eval/v4.1/train_noisy.py",
+    "source_sha256": "3962b13e0e12beeaa415b1344a53a9e84b62156670c66cb282f43bed9a3a7915",
+    "staged_sha256": "3962b13e0e12beeaa415b1344a53a9e84b62156670c66cb282f43bed9a3a7915",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/plot_training_curves.py",
+    "destination": "experiments/reference/mnist/plot_training_curves.py",
+    "source_sha256": "63e5fcad26f1243020614c76e9e430c9e214efd346d341bd3b0368e603ef3d69",
+    "staged_sha256": "63e5fcad26f1243020614c76e9e430c9e214efd346d341bd3b0368e603ef3d69",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/config.py",
+    "destination": "experiments/reference/fashion_mnist/v4.1_tVaDE_ModeB/config.py",
+    "source_sha256": "b2f6eebe039d948b40829f6c091d2ca95d8048693b409909bb87051313407293",
+    "staged_sha256": "b2f6eebe039d948b40829f6c091d2ca95d8048693b409909bb87051313407293",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/data/__init__.py",
+    "destination": "experiments/reference/fashion_mnist/v4.1_tVaDE_ModeB/data/__init__.py",
+    "source_sha256": "3464edf1caaca5b8fd5c0396651dc04ca913f5ae4d5d2edb38470ee62471f993",
+    "staged_sha256": "3464edf1caaca5b8fd5c0396651dc04ca913f5ae4d5d2edb38470ee62471f993",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/data/data_utils.py",
+    "destination": "experiments/reference/fashion_mnist/v4.1_tVaDE_ModeB/data/data_utils.py",
+    "source_sha256": "7d69bed93aeccc967538a50977b1803f1409a7d531982311d2527c68bf89f567",
+    "staged_sha256": "7d69bed93aeccc967538a50977b1803f1409a7d531982311d2527c68bf89f567",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/models/__init__.py",
+    "destination": "experiments/reference/fashion_mnist/v4.1_tVaDE_ModeB/models/__init__.py",
+    "source_sha256": "b51efb7b3481474346b108316cc849e62f9484a4d70a209a7f068fdec14aaf61",
+    "staged_sha256": "b51efb7b3481474346b108316cc849e62f9484a4d70a209a7f068fdec14aaf61",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/models/vae.py",
+    "destination": "experiments/reference/fashion_mnist/v4.1_tVaDE_ModeB/models/vae.py",
+    "source_sha256": "45cc4eae53ddb5e529c3d8b292ef81f5a56d766bb23aca5e310cd6c629a525b2",
+    "staged_sha256": "45cc4eae53ddb5e529c3d8b292ef81f5a56d766bb23aca5e310cd6c629a525b2",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/train.py",
+    "destination": "experiments/reference/fashion_mnist/v4.1_tVaDE_ModeB/train.py",
+    "source_sha256": "150214e77ff0fbed1439465336d82d1a2df0717763366049e6255e6ccc45004a",
+    "staged_sha256": "150214e77ff0fbed1439465336d82d1a2df0717763366049e6255e6ccc45004a",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/training/__init__.py",
+    "destination": "experiments/reference/fashion_mnist/v4.1_tVaDE_ModeB/training/__init__.py",
+    "source_sha256": "11ef7fd1e1e93ac2199d47bd1d7957baa0ffd09412ac9efd4ee6e5c5af2465a9",
+    "staged_sha256": "11ef7fd1e1e93ac2199d47bd1d7957baa0ffd09412ac9efd4ee6e5c5af2465a9",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/training/trainer.py",
+    "destination": "experiments/reference/fashion_mnist/v4.1_tVaDE_ModeB/training/trainer.py",
+    "source_sha256": "8559e76cd21240bd1502069dcf1b311f133e1dde4570f9d75d25cb365c5c178d",
+    "staged_sha256": "8559e76cd21240bd1502069dcf1b311f133e1dde4570f9d75d25cb365c5c178d",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/utils/__init__.py",
+    "destination": "experiments/reference/fashion_mnist/v4.1_tVaDE_ModeB/utils/__init__.py",
+    "source_sha256": "fc1b73510665a8960d2ebae95095ece05fc52a21c8d3a94d374971b7dc85b4fd",
+    "staged_sha256": "fc1b73510665a8960d2ebae95095ece05fc52a21c8d3a94d374971b7dc85b4fd",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/utils/clustering.py",
+    "destination": "experiments/reference/fashion_mnist/v4.1_tVaDE_ModeB/utils/clustering.py",
+    "source_sha256": "fe9ec0a2a20ee5e84aa4bbb4e555446383af212ecc1927352c71bc38dd0c7e44",
+    "staged_sha256": "fe9ec0a2a20ee5e84aa4bbb4e555446383af212ecc1927352c71bc38dd0c7e44",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/utils/compute_profile.py",
+    "destination": "experiments/reference/fashion_mnist/v4.1_tVaDE_ModeB/utils/compute_profile.py",
+    "source_sha256": "65b77b535b46b45baaf2cf7eb7f268ca0b77f2f4878826d5d648ea56463f5d3a",
+    "staged_sha256": "65b77b535b46b45baaf2cf7eb7f268ca0b77f2f4878826d5d648ea56463f5d3a",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/utils/general.py",
+    "destination": "experiments/reference/fashion_mnist/v4.1_tVaDE_ModeB/utils/general.py",
+    "source_sha256": "91d48d7251734afff3a465c4f526f6421103dd0da2da1d861cc0f302fca488ca",
+    "staged_sha256": "91d48d7251734afff3a465c4f526f6421103dd0da2da1d861cc0f302fca488ca",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/utils/visualization.py",
+    "destination": "experiments/reference/fashion_mnist/v4.1_tVaDE_ModeB/utils/visualization.py",
+    "source_sha256": "11f72c314b98f42cbf03dad01b73170947687d7cd9dbe334ad4fd61c54101612",
+    "staged_sha256": "22e057701bc93b3bdcf71a403c7229b7e33574c0acb5aa7231df8980643dbc2b",
+    "adaptations": [
+      "Use pyplot.get_cmap for current Matplotlib compatibility; visualization only"
+    ]
+  },
+  {
+    "source": "exp12_fashion_mnist/robustness_eval/noise_utils.py",
+    "destination": "experiments/reference/fashion_mnist/robustness_eval/noise_utils.py",
+    "source_sha256": "fa332c19ff29c9138ee6fcced0f37fb32e3c990e5df944d2b49b02bec13fd817",
+    "staged_sha256": "fa332c19ff29c9138ee6fcced0f37fb32e3c990e5df944d2b49b02bec13fd817",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/robustness_eval/v4.1/train_noisy.py",
+    "destination": "experiments/reference/fashion_mnist/robustness_eval/v4.1/train_noisy.py",
+    "source_sha256": "9ce751d093139a7f0016927dea4f32380e096d517a5f6a126f40afd0bf8b9f32",
+    "staged_sha256": "9ce751d093139a7f0016927dea4f32380e096d517a5f6a126f40afd0bf8b9f32",
+    "adaptations": []
+  },
+  {
+    "source": "exp12_fashion_mnist/plot_training_curves.py",
+    "destination": "experiments/reference/fashion_mnist/plot_training_curves.py",
+    "source_sha256": "63e5fcad26f1243020614c76e9e430c9e214efd346d341bd3b0368e603ef3d69",
+    "staged_sha256": "63e5fcad26f1243020614c76e9e430c9e214efd346d341bd3b0368e603ef3d69",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/config.py",
+    "destination": "experiments/reference/oasis_coronal/v4.1_tVaDE_ModeB/config.py",
+    "source_sha256": "bd413e8755e2d239086ff1743b903623fdc6363dba4b3c13b85d31dadc16f254",
+    "staged_sha256": "bd413e8755e2d239086ff1743b903623fdc6363dba4b3c13b85d31dadc16f254",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/data/__init__.py",
+    "destination": "experiments/reference/oasis_coronal/v4.1_tVaDE_ModeB/data/__init__.py",
+    "source_sha256": "3464edf1caaca5b8fd5c0396651dc04ca913f5ae4d5d2edb38470ee62471f993",
+    "staged_sha256": "3464edf1caaca5b8fd5c0396651dc04ca913f5ae4d5d2edb38470ee62471f993",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/data/data_utils.py",
+    "destination": "experiments/reference/oasis_coronal/v4.1_tVaDE_ModeB/data/data_utils.py",
+    "source_sha256": "f7468f35540f86664a8a77020da5346d2a5101e3c997d3d2dd0ae3e5d08cefd8",
+    "staged_sha256": "f7468f35540f86664a8a77020da5346d2a5101e3c997d3d2dd0ae3e5d08cefd8",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/models/__init__.py",
+    "destination": "experiments/reference/oasis_coronal/v4.1_tVaDE_ModeB/models/__init__.py",
+    "source_sha256": "b51efb7b3481474346b108316cc849e62f9484a4d70a209a7f068fdec14aaf61",
+    "staged_sha256": "b51efb7b3481474346b108316cc849e62f9484a4d70a209a7f068fdec14aaf61",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/models/vae.py",
+    "destination": "experiments/reference/oasis_coronal/v4.1_tVaDE_ModeB/models/vae.py",
+    "source_sha256": "314600ad06b7d777c725238bc5db9e692a0a5a582910cb13c054832dae08f587",
+    "staged_sha256": "314600ad06b7d777c725238bc5db9e692a0a5a582910cb13c054832dae08f587",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/train.py",
+    "destination": "experiments/reference/oasis_coronal/v4.1_tVaDE_ModeB/train.py",
+    "source_sha256": "150214e77ff0fbed1439465336d82d1a2df0717763366049e6255e6ccc45004a",
+    "staged_sha256": "150214e77ff0fbed1439465336d82d1a2df0717763366049e6255e6ccc45004a",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/training/__init__.py",
+    "destination": "experiments/reference/oasis_coronal/v4.1_tVaDE_ModeB/training/__init__.py",
+    "source_sha256": "11ef7fd1e1e93ac2199d47bd1d7957baa0ffd09412ac9efd4ee6e5c5af2465a9",
+    "staged_sha256": "11ef7fd1e1e93ac2199d47bd1d7957baa0ffd09412ac9efd4ee6e5c5af2465a9",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/training/trainer.py",
+    "destination": "experiments/reference/oasis_coronal/v4.1_tVaDE_ModeB/training/trainer.py",
+    "source_sha256": "08ec98b001bd8e8f4f958891a438fb6d4a4de4d0671d3ba103cf8f9b65a2307e",
+    "staged_sha256": "08ec98b001bd8e8f4f958891a438fb6d4a4de4d0671d3ba103cf8f9b65a2307e",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/utils/__init__.py",
+    "destination": "experiments/reference/oasis_coronal/v4.1_tVaDE_ModeB/utils/__init__.py",
+    "source_sha256": "fc1b73510665a8960d2ebae95095ece05fc52a21c8d3a94d374971b7dc85b4fd",
+    "staged_sha256": "fc1b73510665a8960d2ebae95095ece05fc52a21c8d3a94d374971b7dc85b4fd",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/utils/clustering.py",
+    "destination": "experiments/reference/oasis_coronal/v4.1_tVaDE_ModeB/utils/clustering.py",
+    "source_sha256": "fe9ec0a2a20ee5e84aa4bbb4e555446383af212ecc1927352c71bc38dd0c7e44",
+    "staged_sha256": "fe9ec0a2a20ee5e84aa4bbb4e555446383af212ecc1927352c71bc38dd0c7e44",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/utils/compute_profile.py",
+    "destination": "experiments/reference/oasis_coronal/v4.1_tVaDE_ModeB/utils/compute_profile.py",
+    "source_sha256": "65b77b535b46b45baaf2cf7eb7f268ca0b77f2f4878826d5d648ea56463f5d3a",
+    "staged_sha256": "65b77b535b46b45baaf2cf7eb7f268ca0b77f2f4878826d5d648ea56463f5d3a",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/utils/general.py",
+    "destination": "experiments/reference/oasis_coronal/v4.1_tVaDE_ModeB/utils/general.py",
+    "source_sha256": "91d48d7251734afff3a465c4f526f6421103dd0da2da1d861cc0f302fca488ca",
+    "staged_sha256": "91d48d7251734afff3a465c4f526f6421103dd0da2da1d861cc0f302fca488ca",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/utils/visualization.py",
+    "destination": "experiments/reference/oasis_coronal/v4.1_tVaDE_ModeB/utils/visualization.py",
+    "source_sha256": "11f72c314b98f42cbf03dad01b73170947687d7cd9dbe334ad4fd61c54101612",
+    "staged_sha256": "22e057701bc93b3bdcf71a403c7229b7e33574c0acb5aa7231df8980643dbc2b",
+    "adaptations": [
+      "Use pyplot.get_cmap for current Matplotlib compatibility; visualization only"
+    ]
+  },
+  {
+    "source": "exp16_oasis_coronal_128/robustness_eval/noise_utils.py",
+    "destination": "experiments/reference/oasis_coronal/robustness_eval/noise_utils.py",
+    "source_sha256": "fa332c19ff29c9138ee6fcced0f37fb32e3c990e5df944d2b49b02bec13fd817",
+    "staged_sha256": "fa332c19ff29c9138ee6fcced0f37fb32e3c990e5df944d2b49b02bec13fd817",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/robustness_eval/v4.1/train_noisy.py",
+    "destination": "experiments/reference/oasis_coronal/robustness_eval/v4.1/train_noisy.py",
+    "source_sha256": "3962b13e0e12beeaa415b1344a53a9e84b62156670c66cb282f43bed9a3a7915",
+    "staged_sha256": "3962b13e0e12beeaa415b1344a53a9e84b62156670c66cb282f43bed9a3a7915",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/plot_training_curves.py",
+    "destination": "experiments/reference/oasis_coronal/plot_training_curves.py",
+    "source_sha256": "63e5fcad26f1243020614c76e9e430c9e214efd346d341bd3b0368e603ef3d69",
+    "staged_sha256": "63e5fcad26f1243020614c76e9e430c9e214efd346d341bd3b0368e603ef3d69",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/config.py",
+    "destination": "experiments/reference/oasis_axial/v4.1_tVaDE_ModeB/config.py",
+    "source_sha256": "bd413e8755e2d239086ff1743b903623fdc6363dba4b3c13b85d31dadc16f254",
+    "staged_sha256": "bd413e8755e2d239086ff1743b903623fdc6363dba4b3c13b85d31dadc16f254",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/data/__init__.py",
+    "destination": "experiments/reference/oasis_axial/v4.1_tVaDE_ModeB/data/__init__.py",
+    "source_sha256": "3464edf1caaca5b8fd5c0396651dc04ca913f5ae4d5d2edb38470ee62471f993",
+    "staged_sha256": "3464edf1caaca5b8fd5c0396651dc04ca913f5ae4d5d2edb38470ee62471f993",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/data/data_utils.py",
+    "destination": "experiments/reference/oasis_axial/v4.1_tVaDE_ModeB/data/data_utils.py",
+    "source_sha256": "f7468f35540f86664a8a77020da5346d2a5101e3c997d3d2dd0ae3e5d08cefd8",
+    "staged_sha256": "f7468f35540f86664a8a77020da5346d2a5101e3c997d3d2dd0ae3e5d08cefd8",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/models/__init__.py",
+    "destination": "experiments/reference/oasis_axial/v4.1_tVaDE_ModeB/models/__init__.py",
+    "source_sha256": "b51efb7b3481474346b108316cc849e62f9484a4d70a209a7f068fdec14aaf61",
+    "staged_sha256": "b51efb7b3481474346b108316cc849e62f9484a4d70a209a7f068fdec14aaf61",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/models/vae.py",
+    "destination": "experiments/reference/oasis_axial/v4.1_tVaDE_ModeB/models/vae.py",
+    "source_sha256": "314600ad06b7d777c725238bc5db9e692a0a5a582910cb13c054832dae08f587",
+    "staged_sha256": "314600ad06b7d777c725238bc5db9e692a0a5a582910cb13c054832dae08f587",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/train.py",
+    "destination": "experiments/reference/oasis_axial/v4.1_tVaDE_ModeB/train.py",
+    "source_sha256": "150214e77ff0fbed1439465336d82d1a2df0717763366049e6255e6ccc45004a",
+    "staged_sha256": "150214e77ff0fbed1439465336d82d1a2df0717763366049e6255e6ccc45004a",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/training/__init__.py",
+    "destination": "experiments/reference/oasis_axial/v4.1_tVaDE_ModeB/training/__init__.py",
+    "source_sha256": "11ef7fd1e1e93ac2199d47bd1d7957baa0ffd09412ac9efd4ee6e5c5af2465a9",
+    "staged_sha256": "11ef7fd1e1e93ac2199d47bd1d7957baa0ffd09412ac9efd4ee6e5c5af2465a9",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/training/trainer.py",
+    "destination": "experiments/reference/oasis_axial/v4.1_tVaDE_ModeB/training/trainer.py",
+    "source_sha256": "08ec98b001bd8e8f4f958891a438fb6d4a4de4d0671d3ba103cf8f9b65a2307e",
+    "staged_sha256": "08ec98b001bd8e8f4f958891a438fb6d4a4de4d0671d3ba103cf8f9b65a2307e",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/utils/__init__.py",
+    "destination": "experiments/reference/oasis_axial/v4.1_tVaDE_ModeB/utils/__init__.py",
+    "source_sha256": "fc1b73510665a8960d2ebae95095ece05fc52a21c8d3a94d374971b7dc85b4fd",
+    "staged_sha256": "fc1b73510665a8960d2ebae95095ece05fc52a21c8d3a94d374971b7dc85b4fd",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/utils/clustering.py",
+    "destination": "experiments/reference/oasis_axial/v4.1_tVaDE_ModeB/utils/clustering.py",
+    "source_sha256": "fe9ec0a2a20ee5e84aa4bbb4e555446383af212ecc1927352c71bc38dd0c7e44",
+    "staged_sha256": "fe9ec0a2a20ee5e84aa4bbb4e555446383af212ecc1927352c71bc38dd0c7e44",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/utils/compute_profile.py",
+    "destination": "experiments/reference/oasis_axial/v4.1_tVaDE_ModeB/utils/compute_profile.py",
+    "source_sha256": "65b77b535b46b45baaf2cf7eb7f268ca0b77f2f4878826d5d648ea56463f5d3a",
+    "staged_sha256": "65b77b535b46b45baaf2cf7eb7f268ca0b77f2f4878826d5d648ea56463f5d3a",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/utils/general.py",
+    "destination": "experiments/reference/oasis_axial/v4.1_tVaDE_ModeB/utils/general.py",
+    "source_sha256": "91d48d7251734afff3a465c4f526f6421103dd0da2da1d861cc0f302fca488ca",
+    "staged_sha256": "91d48d7251734afff3a465c4f526f6421103dd0da2da1d861cc0f302fca488ca",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/utils/visualization.py",
+    "destination": "experiments/reference/oasis_axial/v4.1_tVaDE_ModeB/utils/visualization.py",
+    "source_sha256": "11f72c314b98f42cbf03dad01b73170947687d7cd9dbe334ad4fd61c54101612",
+    "staged_sha256": "22e057701bc93b3bdcf71a403c7229b7e33574c0acb5aa7231df8980643dbc2b",
+    "adaptations": [
+      "Use pyplot.get_cmap for current Matplotlib compatibility; visualization only"
+    ]
+  },
+  {
+    "source": "exp17_oasis_axial_128/robustness_eval/noise_utils.py",
+    "destination": "experiments/reference/oasis_axial/robustness_eval/noise_utils.py",
+    "source_sha256": "fa332c19ff29c9138ee6fcced0f37fb32e3c990e5df944d2b49b02bec13fd817",
+    "staged_sha256": "fa332c19ff29c9138ee6fcced0f37fb32e3c990e5df944d2b49b02bec13fd817",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/robustness_eval/v4.1/train_noisy.py",
+    "destination": "experiments/reference/oasis_axial/robustness_eval/v4.1/train_noisy.py",
+    "source_sha256": "3962b13e0e12beeaa415b1344a53a9e84b62156670c66cb282f43bed9a3a7915",
+    "staged_sha256": "3962b13e0e12beeaa415b1344a53a9e84b62156670c66cb282f43bed9a3a7915",
+    "adaptations": []
+  },
+  {
+    "source": "exp17_oasis_axial_128/plot_training_curves.py",
+    "destination": "experiments/reference/oasis_axial/plot_training_curves.py",
+    "source_sha256": "63e5fcad26f1243020614c76e9e430c9e214efd346d341bd3b0368e603ef3d69",
+    "staged_sha256": "63e5fcad26f1243020614c76e9e430c9e214efd346d341bd3b0368e603ef3d69",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/config.py",
+    "destination": "experiments/reference/oasis_sagittal/v4.1_tVaDE_ModeB/config.py",
+    "source_sha256": "bd413e8755e2d239086ff1743b903623fdc6363dba4b3c13b85d31dadc16f254",
+    "staged_sha256": "bd413e8755e2d239086ff1743b903623fdc6363dba4b3c13b85d31dadc16f254",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/data/__init__.py",
+    "destination": "experiments/reference/oasis_sagittal/v4.1_tVaDE_ModeB/data/__init__.py",
+    "source_sha256": "3464edf1caaca5b8fd5c0396651dc04ca913f5ae4d5d2edb38470ee62471f993",
+    "staged_sha256": "3464edf1caaca5b8fd5c0396651dc04ca913f5ae4d5d2edb38470ee62471f993",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/data/data_utils.py",
+    "destination": "experiments/reference/oasis_sagittal/v4.1_tVaDE_ModeB/data/data_utils.py",
+    "source_sha256": "f7468f35540f86664a8a77020da5346d2a5101e3c997d3d2dd0ae3e5d08cefd8",
+    "staged_sha256": "f7468f35540f86664a8a77020da5346d2a5101e3c997d3d2dd0ae3e5d08cefd8",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/models/__init__.py",
+    "destination": "experiments/reference/oasis_sagittal/v4.1_tVaDE_ModeB/models/__init__.py",
+    "source_sha256": "b51efb7b3481474346b108316cc849e62f9484a4d70a209a7f068fdec14aaf61",
+    "staged_sha256": "b51efb7b3481474346b108316cc849e62f9484a4d70a209a7f068fdec14aaf61",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/models/vae.py",
+    "destination": "experiments/reference/oasis_sagittal/v4.1_tVaDE_ModeB/models/vae.py",
+    "source_sha256": "314600ad06b7d777c725238bc5db9e692a0a5a582910cb13c054832dae08f587",
+    "staged_sha256": "314600ad06b7d777c725238bc5db9e692a0a5a582910cb13c054832dae08f587",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/train.py",
+    "destination": "experiments/reference/oasis_sagittal/v4.1_tVaDE_ModeB/train.py",
+    "source_sha256": "150214e77ff0fbed1439465336d82d1a2df0717763366049e6255e6ccc45004a",
+    "staged_sha256": "150214e77ff0fbed1439465336d82d1a2df0717763366049e6255e6ccc45004a",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/training/__init__.py",
+    "destination": "experiments/reference/oasis_sagittal/v4.1_tVaDE_ModeB/training/__init__.py",
+    "source_sha256": "11ef7fd1e1e93ac2199d47bd1d7957baa0ffd09412ac9efd4ee6e5c5af2465a9",
+    "staged_sha256": "11ef7fd1e1e93ac2199d47bd1d7957baa0ffd09412ac9efd4ee6e5c5af2465a9",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/training/trainer.py",
+    "destination": "experiments/reference/oasis_sagittal/v4.1_tVaDE_ModeB/training/trainer.py",
+    "source_sha256": "08ec98b001bd8e8f4f958891a438fb6d4a4de4d0671d3ba103cf8f9b65a2307e",
+    "staged_sha256": "08ec98b001bd8e8f4f958891a438fb6d4a4de4d0671d3ba103cf8f9b65a2307e",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/utils/__init__.py",
+    "destination": "experiments/reference/oasis_sagittal/v4.1_tVaDE_ModeB/utils/__init__.py",
+    "source_sha256": "fc1b73510665a8960d2ebae95095ece05fc52a21c8d3a94d374971b7dc85b4fd",
+    "staged_sha256": "fc1b73510665a8960d2ebae95095ece05fc52a21c8d3a94d374971b7dc85b4fd",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/utils/clustering.py",
+    "destination": "experiments/reference/oasis_sagittal/v4.1_tVaDE_ModeB/utils/clustering.py",
+    "source_sha256": "fe9ec0a2a20ee5e84aa4bbb4e555446383af212ecc1927352c71bc38dd0c7e44",
+    "staged_sha256": "fe9ec0a2a20ee5e84aa4bbb4e555446383af212ecc1927352c71bc38dd0c7e44",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/utils/compute_profile.py",
+    "destination": "experiments/reference/oasis_sagittal/v4.1_tVaDE_ModeB/utils/compute_profile.py",
+    "source_sha256": "65b77b535b46b45baaf2cf7eb7f268ca0b77f2f4878826d5d648ea56463f5d3a",
+    "staged_sha256": "65b77b535b46b45baaf2cf7eb7f268ca0b77f2f4878826d5d648ea56463f5d3a",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/utils/general.py",
+    "destination": "experiments/reference/oasis_sagittal/v4.1_tVaDE_ModeB/utils/general.py",
+    "source_sha256": "91d48d7251734afff3a465c4f526f6421103dd0da2da1d861cc0f302fca488ca",
+    "staged_sha256": "91d48d7251734afff3a465c4f526f6421103dd0da2da1d861cc0f302fca488ca",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/utils/visualization.py",
+    "destination": "experiments/reference/oasis_sagittal/v4.1_tVaDE_ModeB/utils/visualization.py",
+    "source_sha256": "11f72c314b98f42cbf03dad01b73170947687d7cd9dbe334ad4fd61c54101612",
+    "staged_sha256": "22e057701bc93b3bdcf71a403c7229b7e33574c0acb5aa7231df8980643dbc2b",
+    "adaptations": [
+      "Use pyplot.get_cmap for current Matplotlib compatibility; visualization only"
+    ]
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/robustness_eval/noise_utils.py",
+    "destination": "experiments/reference/oasis_sagittal/robustness_eval/noise_utils.py",
+    "source_sha256": "fa332c19ff29c9138ee6fcced0f37fb32e3c990e5df944d2b49b02bec13fd817",
+    "staged_sha256": "fa332c19ff29c9138ee6fcced0f37fb32e3c990e5df944d2b49b02bec13fd817",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/robustness_eval/v4.1/train_noisy.py",
+    "destination": "experiments/reference/oasis_sagittal/robustness_eval/v4.1/train_noisy.py",
+    "source_sha256": "3962b13e0e12beeaa415b1344a53a9e84b62156670c66cb282f43bed9a3a7915",
+    "staged_sha256": "3962b13e0e12beeaa415b1344a53a9e84b62156670c66cb282f43bed9a3a7915",
+    "adaptations": []
+  },
+  {
+    "source": "exp18_oasis_sagittal_128/plot_training_curves.py",
+    "destination": "experiments/reference/oasis_sagittal/plot_training_curves.py",
+    "source_sha256": "63e5fcad26f1243020614c76e9e430c9e214efd346d341bd3b0368e603ef3d69",
+    "staged_sha256": "63e5fcad26f1243020614c76e9e430c9e214efd346d341bd3b0368e603ef3d69",
+    "adaptations": []
+  },
+  {
+    "source": "exp2_gamma7/v4.1_tVaDE_ModeB/models/vae.py",
+    "destination": "src/tvae/reference/model28.py",
+    "source_sha256": "45cc4eae53ddb5e529c3d8b292ef81f5a56d766bb23aca5e310cd6c629a525b2",
+    "staged_sha256": "45cc4eae53ddb5e529c3d8b292ef81f5a56d766bb23aca5e310cd6c629a525b2",
+    "adaptations": []
+  },
+  {
+    "source": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/models/vae.py",
+    "destination": "src/tvae/reference/model128.py",
+    "source_sha256": "314600ad06b7d777c725238bc5db9e692a0a5a582910cb13c054832dae08f587",
+    "staged_sha256": "314600ad06b7d777c725238bc5db9e692a0a5a582910cb13c054832dae08f587",
+    "adaptations": []
+  }
+]

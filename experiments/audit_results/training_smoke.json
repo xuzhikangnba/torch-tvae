@@ -1,0 +1,72 @@
+[
+  {
+    "dataset": "mnist",
+    "data_root": "data",
+    "output": "outputs/training_smoke_mnist_v2",
+    "gamma": 0.12,
+    "epochs": 2,
+    "seed": 42,
+    "samples_per_class": 64,
+    "device": "cpu",
+    "threads": 4,
+    "workers": 0,
+    "completed": true,
+    "scope": "Training functionality check, not paper benchmark reproduction"
+  },
+  {
+    "dataset": "fashion_mnist",
+    "data_root": "data",
+    "output": "outputs/training_smoke_fashion_mnist",
+    "gamma": 0.12,
+    "epochs": 1,
+    "seed": 42,
+    "samples_per_class": 64,
+    "device": "cpu",
+    "threads": 4,
+    "workers": 0,
+    "completed": true,
+    "scope": "Training functionality check, not paper benchmark reproduction"
+  },
+  {
+    "dataset": "oasis_coronal",
+    "data_root": "data",
+    "output": "outputs/training_smoke_oasis_coronal",
+    "gamma": 0.12,
+    "epochs": 1,
+    "seed": 42,
+    "samples_per_class": 64,
+    "device": "cpu",
+    "threads": 4,
+    "workers": 0,
+    "completed": true,
+    "scope": "Training functionality check, not paper benchmark reproduction"
+  },
+  {
+    "dataset": "oasis_axial",
+    "data_root": "data",
+    "output": "outputs/training_smoke_oasis_axial",
+    "gamma": 0.12,
+    "epochs": 1,
+    "seed": 42,
+    "samples_per_class": 64,
+    "device": "cpu",
+    "threads": 4,
+    "workers": 0,
+    "completed": true,
+    "scope": "Training functionality check, not paper benchmark reproduction"
+  },
+  {
+    "dataset": "oasis_sagittal",
+    "data_root": "data",
+    "output": "outputs/training_smoke_oasis_sagittal",
+    "gamma": 0.12,
+    "epochs": 1,
+    "seed": 42,
+    "samples_per_class": 64,
+    "device": "cpu",
+    "threads": 4,
+    "workers": 0,
+    "completed": true,
+    "scope": "Training functionality check, not paper benchmark reproduction"
+  }
+]

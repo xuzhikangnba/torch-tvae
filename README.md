@@ -1,20 +1,29 @@
 # torch-tvae
 
-**A label-free Student-t VAE and a reusable Gaussian-Gamma prior for PyTorch.**
+**Pro-t-VAE: a label-free Student-t VAE, reusable Gaussian-Gamma prior, and original multi-cluster experiment models for PyTorch.**
 
 Use the default MLP to train a t-VAE, supply your own encoder and decoder, or
 replace the Gaussian KL in an existing VAE with an analytic augmented-model
 regularizer. No labels, classification head, mixture assignments, or GMM fitting
 are required. The core package depends only on PyTorch.
 
-This library develops the Gaussian-Gamma construction in **Revisiting the Power
-of Closed-Form: Robust Deep Image Prototype Discovery via Scale Mixtures**
+This library develops the Gaussian-Gamma construction in **Pro-t-VAE: Closed-Form
+Student's t Mixture VAEs for Robust Image Prototype Discovery**
 (accepted at NeurIPS 2026), by Zhikang Xu, Jiarui Xing, and Jian Wang. The arXiv
 link will be added when the preprint is available.
 
-Version 0.1.0 implements a **single-component Student-t latent prior**. The
-paper's multi-component t-VaDE experiments are not reproduced by this basic
-model. See [the mathematical objective and implementation differences](docs/mathematics.md).
+Version 0.2.0 includes two interfaces: `TVAE` is the basic single-component model;
+`tvae.reference.TVaDE28` and `TVaDE128` preserve the original multi-component
+models and checkpoint parameter names for 28x28 images and 128x128 MRI.
+
+**Reproduction status:** package tests and fresh checkpoint evaluations pass as
+software checks. An archive audit recovers the paper's reported assignment
+scores and all 91 entries checked in Table 1, but exact end-to-end paper
+reproduction is **not verified**: stored checkpoints differ from the selected
+epochs, and the manuscript's training description differs from the archived
+implementation. Read [the reproduction report](docs/reproduction.md) before
+interpreting these results. The basic `TVAE` is not a replacement for the paper
+experiment model. See also [the mathematical objective](docs/mathematics.md).
 
 ## Install
 
@@ -36,14 +45,30 @@ python -m pip install .
 Or install a built wheel:
 
 ```bash
-python -m pip install dist/torch_tvae-0.1.0-py3-none-any.whl
+python -m pip install dist/torch_tvae-0.2.0-py3-none-any.whl
 ```
 
 **PyPI publication is pending.** The command `pip install torch-tvae` should
 only be advertised after that release is published. Git/source/wheel installs
 do not require PyPI publication.
 
-## Train without labels
+## Original multi-cluster models
+
+```python
+from tvae.reference import TVaDE28, TVaDE128
+
+digits = TVaDE28(latent_dim=8, num_clusters=10, nu_init=5.0)
+brain = TVaDE128(latent_dim=32, num_clusters=2, nu_init=5.0)
+```
+
+These models require no classification labels in their loss. They retain the
+archived detached cluster responsibilities and batch-loss convention. Original
+training scripts, a portable launcher, and fresh checkpoint evaluation commands
+are in [experiments](experiments/README.md). The experiment scripts are included
+in the Git checkout/source distribution; the model classes are included in the
+installable wheel. Data and model weights are not bundled.
+
+## Train the basic model without labels
 
 ```python
 import torch

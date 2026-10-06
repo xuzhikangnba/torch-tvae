@@ -1,0 +1,28 @@
+{
+  "dataset": "oasis_axial",
+  "gamma": 0.12,
+  "seed": 42,
+  "device": "cpu",
+  "package_model": "tvae.reference.model128",
+  "checkpoint_sha256": "8f8c248811fa08dc1ab13c1fa8f7e7fc7d2dc0ca806ec39b6924c0d7cf5ca823",
+  "samples_train": 202,
+  "samples_test": 51,
+  "batchnorm_training_batches": [
+    14
+  ],
+  "inferred_training_epochs": [
+    2.0
+  ],
+  "inference": "Epoch inferred from batchnorm counters assuming unchanged batch size and one train pass per epoch",
+  "metrics": {
+    "test_stage_size_entropy": -0.0,
+    "test_refit_size_entropy": 0.9864,
+    "test_stage_silhouette": null,
+    "test_refit_silhouette": 0.2196,
+    "test_stage_davies_bouldin": null,
+    "test_refit_davies_bouldin": 1.4792
+  },
+  "evaluation": "Fresh fixed-seed evaluation; historic stochastic noise/RNG state was not stored",
+  "torch_version": "2.11.0+cu130",
+  "numpy_version": "2.4.6"
+}
