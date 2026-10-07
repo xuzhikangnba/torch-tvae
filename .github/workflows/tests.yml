@@ -13,7 +13,7 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: ${{ matrix.python-version }}
-      - run: python -m pip install '.[dev]'
+      - run: python -m pip install '.[dev,experiments]'
       - run: python -m unittest discover -s tests -v
       - run: python examples/custom_backbone.py
       - run: python -m build

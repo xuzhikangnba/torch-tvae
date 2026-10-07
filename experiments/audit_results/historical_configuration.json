@@ -1,0 +1,1617 @@
+{
+  "matched_runs": 40,
+  "direct_stdout_csv_matches": [
+    {
+      "experiment": "exp2_gamma7",
+      "gamma": 0.0,
+      "metrics_csv": "exp2_gamma7/robustness_eval/results/v4.1_cauchy_g0.0/metrics_20260501_AdamW_lr0.001_bs32_cauchy_g0.0.csv",
+      "metrics_sha256": "5fc4776fda83a53605627aaa8f2ab4352922e33d464f0081a62cbb47eb92bb62",
+      "matched_stdout": "exp2_gamma7/run_logs/cauchy_v4.1_g0.log",
+      "stdout_sha256": "49d7dd8da76e7577d5015cbe33e6e098fce27ec303cb694727edc7cc4ab0130b",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 105.795 | Refit: 0.761 | Stage: 0.198 | NMI: 0.722 | nu: [3.5, 4.5] | Best(R/S): 0.761/0.198"
+        },
+        {
+          "line": 110,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 596,
+          "text": "Epoch 100/100 | Loss: 69.557 | Refit: 0.791 | Stage: 0.808 | NMI: 0.757 | nu: [6.5, 15.2] | Best(R/S): 0.848/0.817"
+        }
+      ]
+    },
+    {
+      "experiment": "exp2_gamma7",
+      "gamma": 0.02,
+      "metrics_csv": "exp2_gamma7/robustness_eval/results/v4.1_cauchy_g0.02/metrics_20260501_AdamW_lr0.001_bs32_cauchy_g0.02.csv",
+      "metrics_sha256": "7dc4b8e07b9c6d628e0cfe14214bd942d9b576615f3ed35e0aa38d49eb661aa8",
+      "matched_stdout": "exp2_gamma7/run_logs/cauchy_v4.1_g0.02.log",
+      "stdout_sha256": "9e3ddef659e70519cbdd9837b6ac062f22d695551ce8f00a1026099ff6a3faea",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 189.884 | Refit: 0.720 | Stage: 0.231 | NMI: 0.688 | nu: [3.8, 4.5] | Best(R/S): 0.720/0.231"
+        },
+        {
+          "line": 125,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 697,
+          "text": "Epoch 100/100 | Loss: 163.124 | Refit: 0.764 | Stage: 0.791 | NMI: 0.742 | nu: [7.2, 13.2] | Best(R/S): 0.880/0.810"
+        }
+      ]
+    },
+    {
+      "experiment": "exp2_gamma7",
+      "gamma": 0.04,
+      "metrics_csv": "exp2_gamma7/robustness_eval/results/v4.1_cauchy_g0.04/metrics_20260502_AdamW_lr0.001_bs32_cauchy_g0.04.csv",
+      "metrics_sha256": "6cf15c98831abe2024d8bf8e6316c26f3152e68c971ca2425b57ae0b695db561",
+      "matched_stdout": "exp2_gamma7/run_logs/cauchy_v4.1_g0.04.log",
+      "stdout_sha256": "32088b4374b3343f9bc12c01081ccea98136eff5da41681957c8a414a8ecec4f",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 234.520 | Refit: 0.736 | Stage: 0.207 | NMI: 0.688 | nu: [3.9, 4.5] | Best(R/S): 0.736/0.207"
+        },
+        {
+          "line": 124,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 694,
+          "text": "Epoch 100/100 | Loss: 211.049 | Refit: 0.884 | Stage: 0.901 | NMI: 0.796 | nu: [6.8, 12.7] | Best(R/S): 0.891/0.904"
+        }
+      ]
+    },
+    {
+      "experiment": "exp2_gamma7",
+      "gamma": 0.06,
+      "metrics_csv": "exp2_gamma7/robustness_eval/results/v4.1_cauchy_g0.06/metrics_20260502_AdamW_lr0.001_bs32_cauchy_g0.06.csv",
+      "metrics_sha256": "e29ac2c610072ed8a6d1a93ca767d0622cea85520bb664f5b47c9a0eaf92e233",
+      "matched_stdout": "exp2_gamma7/run_logs/cauchy_v4.1_g0.06.log",
+      "stdout_sha256": "9df394a53e1386035c67f722c0b8973f481cf49b18b720784ebe01bf26caa592",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 267.523 | Refit: 0.730 | Stage: 0.293 | NMI: 0.689 | nu: [3.9, 4.5] | Best(R/S): 0.730/0.293"
+        },
+        {
+          "line": 118,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 682,
+          "text": "Epoch 100/100 | Loss: 246.561 | Refit: 0.871 | Stage: 0.767 | NMI: 0.781 | nu: [6.0, 12.3] | Best(R/S): 0.871/0.783"
+        }
+      ]
+    },
+    {
+      "experiment": "exp2_gamma7",
+      "gamma": 0.08,
+      "metrics_csv": "exp2_gamma7/robustness_eval/results/v4.1_cauchy_g0.08/metrics_20260502_AdamW_lr0.001_bs32_cauchy_g0.08.csv",
+      "metrics_sha256": "d5890ccdf8607de285cb461e83ff267ca0ca45dca8cd580acfab83b86f16bc69",
+      "matched_stdout": "exp2_gamma7/run_logs/cauchy_v4.1_g0.08.log",
+      "stdout_sha256": "e3f3a084d4f8b0cbd678673f842c0198322434ca955e9188c5111214ef22c226",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 293.635 | Refit: 0.738 | Stage: 0.208 | NMI: 0.684 | nu: [4.1, 4.5] | Best(R/S): 0.738/0.208"
+        },
+        {
+          "line": 119,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 687,
+          "text": "Epoch 100/100 | Loss: 275.086 | Refit: 0.768 | Stage: 0.768 | NMI: 0.752 | nu: [6.1, 13.2] | Best(R/S): 0.822/0.792"
+        }
+      ]
+    },
+    {
+      "experiment": "exp2_gamma7",
+      "gamma": 0.1,
+      "metrics_csv": "exp2_gamma7/robustness_eval/results/v4.1_cauchy_g0.1/metrics_20260502_AdamW_lr0.001_bs32_cauchy_g0.1.csv",
+      "metrics_sha256": "f30b3a7640c009702f290189758d946bdf919fa14f66be6b7375aed56579d119",
+      "matched_stdout": "exp2_gamma7/run_logs/cauchy_v4.1_g0.1.log",
+      "stdout_sha256": "37eaa1a2e5b1b59717f754dbf8ad2bcbf6372f9811aaa6140268e864e64dca4c",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 315.617 | Refit: 0.730 | Stage: 0.277 | NMI: 0.686 | nu: [4.1, 4.5] | Best(R/S): 0.730/0.277"
+        },
+        {
+          "line": 119,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 618,
+          "text": "Epoch 100/100 | Loss: 298.792 | Refit: 0.770 | Stage: 0.774 | NMI: 0.753 | nu: [6.8, 9.4] | Best(R/S): 0.818/0.779"
+        }
+      ]
+    },
+    {
+      "experiment": "exp2_gamma7",
+      "gamma": 0.12,
+      "metrics_csv": "exp2_gamma7/robustness_eval/results/v4.1_cauchy_g0.12/metrics_20260502_AdamW_lr0.001_bs32_cauchy_g0.12.csv",
+      "metrics_sha256": "b73fc1d2d5c2b8f518d7949bac5e27a5b6403cdae9424bf4f2464f10ee1bfd91",
+      "matched_stdout": "exp2_gamma7/run_logs/cauchy_v4.1_g0.12.log",
+      "stdout_sha256": "20c855c84e7a5a226e38eea4a7645c48ecb603a09669b996e88057e36c812cf0",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 334.368 | Refit: 0.724 | Stage: 0.297 | NMI: 0.666 | nu: [4.1, 4.5] | Best(R/S): 0.724/0.297"
+        },
+        {
+          "line": 126,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 637,
+          "text": "Epoch 100/100 | Loss: 319.109 | Refit: 0.784 | Stage: 0.862 | NMI: 0.762 | nu: [6.7, 9.7] | Best(R/S): 0.830/0.867"
+        }
+      ]
+    },
+    {
+      "experiment": "exp2_gamma7",
+      "gamma": 0.14,
+      "metrics_csv": "exp2_gamma7/robustness_eval/results/v4.1_cauchy_g0.14/metrics_20260503_AdamW_lr0.001_bs32_cauchy_g0.14.csv",
+      "metrics_sha256": "d6216981fc6866adb06f760a85dd5d77bb0aeb0ca5b2b7c1cfff208ed1a74f1a",
+      "matched_stdout": "exp2_gamma7/run_logs/cauchy_v4.1_g0.14.log",
+      "stdout_sha256": "f918f8d6e2ed4680bfb6a8fec6feccec08852186e21b1bf065bb35f37313eaf6",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 350.986 | Refit: 0.675 | Stage: 0.252 | NMI: 0.654 | nu: [4.3, 4.5] | Best(R/S): 0.675/0.252"
+        },
+        {
+          "line": 118,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 664,
+          "text": "Epoch 100/100 | Loss: 336.657 | Refit: 0.762 | Stage: 0.758 | NMI: 0.745 | nu: [5.9, 11.2] | Best(R/S): 0.805/0.767"
+        }
+      ]
+    },
+    {
+      "experiment": "exp12_fashion_mnist",
+      "gamma": 0.0,
+      "metrics_csv": "exp12_fashion_mnist/robustness_eval/results/v4.1_cauchy_g0.0/metrics_20260501_AdamW_lr0.001_bs32_cauchy_g0.0.csv",
+      "metrics_sha256": "71513f10849c8434a10c2956f0065fa1fb717be1a3131004dc6166a4ce48cd3c",
+      "matched_stdout": "exp12_fashion_mnist/run_logs/cauchy_v4.1_g0.log",
+      "stdout_sha256": "992e2babee2ba205edae8c7e548c6e5ed62c8764a35a42b2a4c7dba7c38c4596",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 240.514 | Refit: 0.558 | Stage: 0.202 | NMI: 0.589 | nu: [3.5, 4.5] | Best(R/S): 0.558/0.202"
+        },
+        {
+          "line": 125,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 636,
+          "text": "Epoch 100/100 | Loss: 213.388 | Refit: 0.568 | Stage: 0.609 | NMI: 0.626 | nu: [8.3, 28.9] | Best(R/S): 0.612/0.612"
+        }
+      ]
+    },
+    {
+      "experiment": "exp12_fashion_mnist",
+      "gamma": 0.02,
+      "metrics_csv": "exp12_fashion_mnist/robustness_eval/results/v4.1_cauchy_g0.02/metrics_20260503_AdamW_lr0.001_bs32_cauchy_g0.02.csv",
+      "metrics_sha256": "759feb8216808fd11eaf440bea1175fa0ce60d6890ed672d5b4a234e16b1ab3b",
+      "matched_stdout": "exp12_fashion_mnist/run_logs/cauchy_v4.1_g0.02.log",
+      "stdout_sha256": "d70b760326af93035675e04ddd00641bd62e7845e451b60616349343ffd9f33f",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 294.017 | Refit: 0.553 | Stage: 0.273 | NMI: 0.581 | nu: [3.8, 4.5] | Best(R/S): 0.553/0.273"
+        },
+        {
+          "line": 128,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 647,
+          "text": "Epoch 100/100 | Loss: 272.845 | Refit: 0.594 | Stage: 0.586 | NMI: 0.598 | nu: [7.7, 44.9] | Best(R/S): 0.597/0.589"
+        }
+      ]
+    },
+    {
+      "experiment": "exp12_fashion_mnist",
+      "gamma": 0.04,
+      "metrics_csv": "exp12_fashion_mnist/robustness_eval/results/v4.1_cauchy_g0.04/metrics_20260503_AdamW_lr0.001_bs32_cauchy_g0.04.csv",
+      "metrics_sha256": "46e2adc3c97b23d671ad08cf315f1b5493e13254ba8d9b59a2a8fdcabb4b7614",
+      "matched_stdout": "exp12_fashion_mnist/run_logs/cauchy_v4.1_g0.04.log",
+      "stdout_sha256": "db66d18ac6066b29153021d10b21b079bcab566b704db77efc48490cc191a2e7",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 323.831 | Refit: 0.558 | Stage: 0.309 | NMI: 0.568 | nu: [3.9, 4.6] | Best(R/S): 0.558/0.309"
+        },
+        {
+          "line": 131,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 680,
+          "text": "Epoch 100/100 | Loss: 305.372 | Refit: 0.565 | Stage: 0.527 | NMI: 0.593 | nu: [3.6, 26.5] | Best(R/S): 0.573/0.553"
+        }
+      ]
+    },
+    {
+      "experiment": "exp12_fashion_mnist",
+      "gamma": 0.06,
+      "metrics_csv": "exp12_fashion_mnist/robustness_eval/results/v4.1_cauchy_g0.06/metrics_20260503_AdamW_lr0.001_bs32_cauchy_g0.06.csv",
+      "metrics_sha256": "c0a7a29419c461534bc1736874cb3917379a304352080e85abf846ea4dc77787",
+      "matched_stdout": "exp12_fashion_mnist/run_logs/cauchy_v4.1_g0.06.log",
+      "stdout_sha256": "6ffdeaf1146c87d13b073805bcf8997171f5347023309ed2211fbbdf57c9bca5",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 346.151 | Refit: 0.518 | Stage: 0.281 | NMI: 0.565 | nu: [3.9, 4.5] | Best(R/S): 0.518/0.281"
+        },
+        {
+          "line": 131,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 713,
+          "text": "Epoch 100/100 | Loss: 329.576 | Refit: 0.608 | Stage: 0.567 | NMI: 0.578 | nu: [11.0, 26.3] | Best(R/S): 0.616/0.577"
+        }
+      ]
+    },
+    {
+      "experiment": "exp12_fashion_mnist",
+      "gamma": 0.08,
+      "metrics_csv": "exp12_fashion_mnist/robustness_eval/results/v4.1_cauchy_g0.08/metrics_20260503_AdamW_lr0.001_bs32_cauchy_g0.08.csv",
+      "metrics_sha256": "6b8ed33fecaa29457bde667a02fc83b53467b819f50827d8e199e5c0d52175d8",
+      "matched_stdout": "exp12_fashion_mnist/run_logs/cauchy_v4.1_g0.08.log",
+      "stdout_sha256": "7b044d7b380b46956bd647d40a129ae2504d919b4c369b66cfab8d09c7ca6686",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 364.178 | Refit: 0.545 | Stage: 0.291 | NMI: 0.570 | nu: [4.0, 4.6] | Best(R/S): 0.545/0.291"
+        },
+        {
+          "line": 132,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 714,
+          "text": "Epoch 100/100 | Loss: 349.365 | Refit: 0.556 | Stage: 0.553 | NMI: 0.562 | nu: [6.8, 36.4] | Best(R/S): 0.565/0.553"
+        }
+      ]
+    },
+    {
+      "experiment": "exp12_fashion_mnist",
+      "gamma": 0.1,
+      "metrics_csv": "exp12_fashion_mnist/robustness_eval/results/v4.1_cauchy_g0.1/metrics_20260503_AdamW_lr0.001_bs32_cauchy_g0.1.csv",
+      "metrics_sha256": "d74fc24158543f78836fbefe70f3c1be4b707a9dc46900776cdb05040ffca1d6",
+      "matched_stdout": "exp12_fashion_mnist/run_logs/cauchy_v4.1_g0.1.log",
+      "stdout_sha256": "02829edddab86d304625ac77118cf9c8cdf49757b50f8904ee7865f9f6821671",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 379.490 | Refit: 0.516 | Stage: 0.276 | NMI: 0.559 | nu: [4.0, 4.6] | Best(R/S): 0.516/0.276"
+        },
+        {
+          "line": 132,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 710,
+          "text": "Epoch 100/100 | Loss: 365.841 | Refit: 0.570 | Stage: 0.547 | NMI: 0.589 | nu: [8.2, 29.3] | Best(R/S): 0.602/0.554"
+        }
+      ]
+    },
+    {
+      "experiment": "exp12_fashion_mnist",
+      "gamma": 0.12,
+      "metrics_csv": "exp12_fashion_mnist/robustness_eval/results/v4.1_cauchy_g0.12/metrics_20260503_AdamW_lr0.001_bs32_cauchy_g0.12.csv",
+      "metrics_sha256": "c15404b367abfc1390ec18b68196c67d720378e0d27184d884b1729ad8fca5b8",
+      "matched_stdout": "exp12_fashion_mnist/run_logs/cauchy_v4.1_g0.12.log",
+      "stdout_sha256": "1c6b415f1d73283e0d70041dc20097f655ef2ed04f8faf3ca550aa81519de380",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 392.672 | Refit: 0.584 | Stage: 0.277 | NMI: 0.568 | nu: [4.1, 4.6] | Best(R/S): 0.584/0.277"
+        },
+        {
+          "line": 133,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 705,
+          "text": "Epoch 100/100 | Loss: 380.244 | Refit: 0.525 | Stage: 0.529 | NMI: 0.574 | nu: [8.4, 32.4] | Best(R/S): 0.584/0.548"
+        }
+      ]
+    },
+    {
+      "experiment": "exp12_fashion_mnist",
+      "gamma": 0.14,
+      "metrics_csv": "exp12_fashion_mnist/robustness_eval/results/v4.1_cauchy_g0.14/metrics_20260503_AdamW_lr0.001_bs32_cauchy_g0.14.csv",
+      "metrics_sha256": "a7cbb1ea7055a5a267f20eb9a87a54f56aabc265d094b2920b36052654a62146",
+      "matched_stdout": "exp12_fashion_mnist/run_logs/cauchy_v4.1_g0.14.log",
+      "stdout_sha256": "e67ba574b1dc3169af22c56f3eca3e318adc69c1b1c56f20436efcc567ef5805",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 8,
+          "text": "Epoch 001/100 | Loss: 404.408 | Refit: 0.543 | Stage: 0.294 | NMI: 0.561 | nu: [4.2, 4.6] | Best(R/S): 0.543/0.294"
+        },
+        {
+          "line": 133,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 711,
+          "text": "Epoch 100/100 | Loss: 392.712 | Refit: 0.555 | Stage: 0.569 | NMI: 0.572 | nu: [12.3, 39.1] | Best(R/S): 0.620/0.587"
+        }
+      ]
+    },
+    {
+      "experiment": "exp16_oasis_coronal_128",
+      "gamma": 0.0,
+      "metrics_csv": "exp16_oasis_coronal_128/robustness_eval/results/v4.1_cauchy_g0.0/metrics_20260425_AdamW_lr0.001_bs32_cauchy_g0.0.csv",
+      "metrics_sha256": "4653e2f4c032a4e6a004585a5b689d60407d8e82eb506ab760035273fc7bcbc3",
+      "matched_stdout": "exp16_oasis_coronal_128/run_logs/cauchy_v4.1_g0.log",
+      "stdout_sha256": "7eb7d8df1a1fef87ace030215e1ce3fa4d62349823a8012783e5dc7157df2e7c",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 8948.060 | Refit: 0.843 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.843/1.000"
+        },
+        {
+          "line": 105,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 507,
+          "text": "Epoch 100/100 | Loss: 4852.494 | Refit: 0.549 | Stage: 0.647 | NMI: 0.000 | nu: [4.3, 4.4] | Best(R/S): 0.843/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp16_oasis_coronal_128",
+      "gamma": 0.02,
+      "metrics_csv": "exp16_oasis_coronal_128/robustness_eval/results/v4.1_cauchy_g0.02/metrics_20260425_AdamW_lr0.001_bs32_cauchy_g0.02.csv",
+      "metrics_sha256": "b83debbe7aa2f01adeafd9ee1903ef13681edfa5ce69ffdf378b0f9661d55a9b",
+      "matched_stdout": "exp16_oasis_coronal_128/run_logs/cauchy_v4.1_g0.02.log",
+      "stdout_sha256": "04719a080b1d087cfc54bcc5c870a9f4e7f4d9154a2e84181848d5ad3c153049",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 10107.506 | Refit: 0.647 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.647/1.000"
+        },
+        {
+          "line": 107,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 509,
+          "text": "Epoch 100/100 | Loss: 5966.638 | Refit: 0.608 | Stage: 0.588 | NMI: 0.000 | nu: [4.5, 4.6] | Best(R/S): 0.667/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp16_oasis_coronal_128",
+      "gamma": 0.04,
+      "metrics_csv": "exp16_oasis_coronal_128/robustness_eval/results/v4.1_cauchy_g0.04/metrics_20260425_AdamW_lr0.001_bs32_cauchy_g0.04.csv",
+      "metrics_sha256": "ff66de16236e1f44ab5c6dcfe83398c7bfb5efa2753407a3850577c571a7d150",
+      "matched_stdout": "exp16_oasis_coronal_128/run_logs/cauchy_v4.1_g0.04.log",
+      "stdout_sha256": "9156262fa68141bd480e95d8f7547910b342956c8ae6d48975a332c195a3dd75",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9294.836 | Refit: 0.510 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.510/1.000"
+        },
+        {
+          "line": 109,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 515,
+          "text": "Epoch 100/100 | Loss: 6572.478 | Refit: 0.529 | Stage: 0.725 | NMI: 0.000 | nu: [4.4, 4.5] | Best(R/S): 0.647/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp16_oasis_coronal_128",
+      "gamma": 0.06,
+      "metrics_csv": "exp16_oasis_coronal_128/robustness_eval/results/v4.1_cauchy_g0.06/metrics_20260425_AdamW_lr0.001_bs32_cauchy_g0.06.csv",
+      "metrics_sha256": "adb2d21601cfb3d6cf397cf88080d34c637f0310a2c83d7a81a17e0d28a1175b",
+      "matched_stdout": "exp16_oasis_coronal_128/run_logs/cauchy_v4.1_g0.06.log",
+      "stdout_sha256": "10af8b2a5440cc81875b26065cfdd719869bdd37d904b81a543d25e17a0289ff",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9442.472 | Refit: 0.627 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.627/1.000"
+        },
+        {
+          "line": 107,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 511,
+          "text": "Epoch 100/100 | Loss: 7070.147 | Refit: 0.686 | Stage: 0.647 | NMI: 0.000 | nu: [4.4, 4.4] | Best(R/S): 0.706/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp16_oasis_coronal_128",
+      "gamma": 0.08,
+      "metrics_csv": "exp16_oasis_coronal_128/robustness_eval/results/v4.1_cauchy_g0.08/metrics_20260425_AdamW_lr0.001_bs32_cauchy_g0.08.csv",
+      "metrics_sha256": "932a6862e20f14040c1c3bf2b432805dafed72d22beef47a800efc3df7676e24",
+      "matched_stdout": "exp16_oasis_coronal_128/run_logs/cauchy_v4.1_g0.08.log",
+      "stdout_sha256": "47dfe5668798bd34f8244e72159520b79bed96f068561d0671b297deb0de4e6d",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9612.702 | Refit: 0.667 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.667/1.000"
+        },
+        {
+          "line": 107,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 509,
+          "text": "Epoch 100/100 | Loss: 7453.773 | Refit: 0.608 | Stage: 0.706 | NMI: 0.000 | nu: [4.4, 4.5] | Best(R/S): 0.765/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp16_oasis_coronal_128",
+      "gamma": 0.1,
+      "metrics_csv": "exp16_oasis_coronal_128/robustness_eval/results/v4.1_cauchy_g0.1/metrics_20260425_AdamW_lr0.001_bs32_cauchy_g0.1.csv",
+      "metrics_sha256": "9d1fa8e76d34b93150d179bf9d32e796edf0e151b61a6584daddea5151ed0c2d",
+      "matched_stdout": "exp16_oasis_coronal_128/run_logs/cauchy_v4.1_g0.1.log",
+      "stdout_sha256": "0b8c5aceea56fe0bfc70d9808557846efee75213d6f941c92b6bf083952abf5c",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9748.009 | Refit: 0.667 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.667/1.000"
+        },
+        {
+          "line": 109,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 511,
+          "text": "Epoch 100/100 | Loss: 7795.864 | Refit: 0.510 | Stage: 0.529 | NMI: 0.000 | nu: [4.4, 4.5] | Best(R/S): 0.784/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp16_oasis_coronal_128",
+      "gamma": 0.12,
+      "metrics_csv": "exp16_oasis_coronal_128/robustness_eval/results/v4.1_cauchy_g0.12/metrics_20260425_AdamW_lr0.001_bs32_cauchy_g0.12.csv",
+      "metrics_sha256": "63fb2e284f1a639d805f55e3266624fd9bd4d149750c8da0bdacc06acd2b7698",
+      "matched_stdout": "exp16_oasis_coronal_128/run_logs/cauchy_v4.1_g0.12.log",
+      "stdout_sha256": "7ba9d84521564aa23e529d59b6d6588bfcde6ee0ea6165e83ab0c978030b18a2",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9868.478 | Refit: 0.627 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.627/1.000"
+        },
+        {
+          "line": 109,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 511,
+          "text": "Epoch 100/100 | Loss: 8074.598 | Refit: 0.588 | Stage: 0.627 | NMI: 0.000 | nu: [4.4, 4.4] | Best(R/S): 0.725/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp16_oasis_coronal_128",
+      "gamma": 0.14,
+      "metrics_csv": "exp16_oasis_coronal_128/robustness_eval/results/v4.1_cauchy_g0.14/metrics_20260425_AdamW_lr0.001_bs32_cauchy_g0.14.csv",
+      "metrics_sha256": "0f21a1ef7686ffb77fc2f6cd287465045f3d50d91a2323f85631e733a5113777",
+      "matched_stdout": "exp16_oasis_coronal_128/run_logs/cauchy_v4.1_g0.14.log",
+      "stdout_sha256": "267b7ebe04e18dfdcfd34e26edfa23d858e1cc1690b050be2e77ba430124c57a",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 10094.243 | Refit: 0.647 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.647/1.000"
+        },
+        {
+          "line": 107,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 511,
+          "text": "Epoch 100/100 | Loss: 8329.303 | Refit: 0.608 | Stage: 0.549 | NMI: 0.000 | nu: [4.4, 4.4] | Best(R/S): 0.686/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp17_oasis_axial_128",
+      "gamma": 0.0,
+      "metrics_csv": "exp17_oasis_axial_128/robustness_eval/results/v4.1_cauchy_g0.0/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.0.csv",
+      "metrics_sha256": "47addcaa19ef37e179d7ef415241fecbce6c44b0f997644cbad562d0fdd397f9",
+      "matched_stdout": "exp17_oasis_axial_128/run_logs/cauchy_v4.1_g0.log",
+      "stdout_sha256": "3d9c1c16ac7674da8626f73c66ee463d8d12a60d45d6063435850cafd0f29646",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 8194.368 | Refit: 0.510 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.510/1.000"
+        },
+        {
+          "line": 111,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 517,
+          "text": "Epoch 100/100 | Loss: 3434.624 | Refit: 0.549 | Stage: 0.529 | NMI: 0.000 | nu: [4.6, 4.7] | Best(R/S): 0.627/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp17_oasis_axial_128",
+      "gamma": 0.02,
+      "metrics_csv": "exp17_oasis_axial_128/robustness_eval/results/v4.1_cauchy_g0.02/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.02.csv",
+      "metrics_sha256": "15a96bba127338d63ddb15734d38a05cb4182ab3d72204930d5718fd4d7846bc",
+      "matched_stdout": "exp17_oasis_axial_128/run_logs/cauchy_v4.1_g0.02.log",
+      "stdout_sha256": "01f3539b8e513a6344c449be779f375a850bf0ee143b5edf8d93e43d967ddf07",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 8745.333 | Refit: 0.588 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.588/1.000"
+        },
+        {
+          "line": 107,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 513,
+          "text": "Epoch 100/100 | Loss: 4923.696 | Refit: 0.569 | Stage: 0.588 | NMI: 0.000 | nu: [4.6, 4.6] | Best(R/S): 0.667/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp17_oasis_axial_128",
+      "gamma": 0.04,
+      "metrics_csv": "exp17_oasis_axial_128/robustness_eval/results/v4.1_cauchy_g0.04/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.04.csv",
+      "metrics_sha256": "a5dbc355f772521b419795c46133dec34ef58088a0512bf4ceb493cd6921282b",
+      "matched_stdout": "exp17_oasis_axial_128/run_logs/cauchy_v4.1_g0.04.log",
+      "stdout_sha256": "7ba84c4d448c8e887a6e9738039e82ddf39abf46a3b08380245ec0777124a465",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 8791.843 | Refit: 0.627 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.627/1.000"
+        },
+        {
+          "line": 107,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 509,
+          "text": "Epoch 100/100 | Loss: 5673.223 | Refit: 0.549 | Stage: 0.608 | NMI: 0.000 | nu: [4.5, 4.6] | Best(R/S): 0.725/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp17_oasis_axial_128",
+      "gamma": 0.06,
+      "metrics_csv": "exp17_oasis_axial_128/robustness_eval/results/v4.1_cauchy_g0.06/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.06.csv",
+      "metrics_sha256": "1b6a0bcd5d3c73b04c3dc93d99124c68d3ff2f654b3aa43a72c5c48c937a2e4f",
+      "matched_stdout": "exp17_oasis_axial_128/run_logs/cauchy_v4.1_g0.06.log",
+      "stdout_sha256": "1394288a3b9cebe53a447a5fec33ccc71d7489aa30e96375ab1a6efbfdfe7b80",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 8783.613 | Refit: 0.549 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.549/1.000"
+        },
+        {
+          "line": 109,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 515,
+          "text": "Epoch 100/100 | Loss: 6285.905 | Refit: 0.549 | Stage: 0.510 | NMI: 0.000 | nu: [4.6, 4.6] | Best(R/S): 0.647/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp17_oasis_axial_128",
+      "gamma": 0.08,
+      "metrics_csv": "exp17_oasis_axial_128/robustness_eval/results/v4.1_cauchy_g0.08/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.08.csv",
+      "metrics_sha256": "08daeafc7a9e7011663795f4d099442c3fac7c50c8b71aa09c41a5ddf9e03002",
+      "matched_stdout": "exp17_oasis_axial_128/run_logs/cauchy_v4.1_g0.08.log",
+      "stdout_sha256": "5e94ccb36f63c6898485f1de5cd78700a6bb2773d0d58e91f71c08e1890fcc85",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9075.719 | Refit: 0.510 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.510/1.000"
+        },
+        {
+          "line": 109,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 511,
+          "text": "Epoch 100/100 | Loss: 6755.097 | Refit: 0.549 | Stage: 0.529 | NMI: 0.000 | nu: [4.6, 4.7] | Best(R/S): 0.627/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp17_oasis_axial_128",
+      "gamma": 0.1,
+      "metrics_csv": "exp17_oasis_axial_128/robustness_eval/results/v4.1_cauchy_g0.1/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.1.csv",
+      "metrics_sha256": "8f83aae9a668a4f054c790ebc23c421d1513d4da619426dc31e0915d574b7800",
+      "matched_stdout": "exp17_oasis_axial_128/run_logs/cauchy_v4.1_g0.1.log",
+      "stdout_sha256": "8c621c1fca5104be42a6b5923b264d6e64c825961d925ab355349fe69eb1b1fb",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9228.763 | Refit: 0.510 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.510/1.000"
+        },
+        {
+          "line": 107,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 509,
+          "text": "Epoch 100/100 | Loss: 7147.132 | Refit: 0.529 | Stage: 0.529 | NMI: 0.000 | nu: [4.5, 4.5] | Best(R/S): 0.647/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp17_oasis_axial_128",
+      "gamma": 0.12,
+      "metrics_csv": "exp17_oasis_axial_128/robustness_eval/results/v4.1_cauchy_g0.12/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.12.csv",
+      "metrics_sha256": "67161a9cbc6944b2f5afdf61666fb0f6dcbf2a78baf38f6c38ef4b830866a03d",
+      "matched_stdout": "exp17_oasis_axial_128/run_logs/cauchy_v4.1_g0.12.log",
+      "stdout_sha256": "2c748ab8b614463ca4057e69d6dfa4d97152f976b6ae8a661470fd8817423f32",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9390.560 | Refit: 0.627 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.627/1.000"
+        },
+        {
+          "line": 107,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 509,
+          "text": "Epoch 100/100 | Loss: 7496.841 | Refit: 0.569 | Stage: 0.569 | NMI: 0.000 | nu: [4.5, 4.5] | Best(R/S): 0.941/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp17_oasis_axial_128",
+      "gamma": 0.14,
+      "metrics_csv": "exp17_oasis_axial_128/robustness_eval/results/v4.1_cauchy_g0.14/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.14.csv",
+      "metrics_sha256": "5ee63f1fb5fc193d69d13f9d92e59c6121bb642ef610d293e34d10e88e978654",
+      "matched_stdout": "exp17_oasis_axial_128/run_logs/cauchy_v4.1_g0.14.log",
+      "stdout_sha256": "3107c1fcf526e310ef67bdc36c4fd8c38a989601d04508f0763331682e4a7090",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9648.944 | Refit: 0.549 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.549/1.000"
+        },
+        {
+          "line": 109,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 511,
+          "text": "Epoch 100/100 | Loss: 7788.168 | Refit: 0.569 | Stage: 0.529 | NMI: 0.000 | nu: [4.5, 4.5] | Best(R/S): 0.627/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp18_oasis_sagittal_128",
+      "gamma": 0.0,
+      "metrics_csv": "exp18_oasis_sagittal_128/robustness_eval/results/v4.1_cauchy_g0.0/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.0.csv",
+      "metrics_sha256": "53ac64434750c4347104ed4f0703cbf9585712d5c1f7e2d1429307bdbcf09984",
+      "matched_stdout": "exp18_oasis_sagittal_128/run_logs/cauchy_v4.1_g0.log",
+      "stdout_sha256": "f4e6f638303cddbc5eaacd018e3a4fdef84bc6a0f6259c1b14fb40400433864f",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 8481.545 | Refit: 0.647 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.647/1.000"
+        },
+        {
+          "line": 115,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 517,
+          "text": "Epoch 100/100 | Loss: 4380.654 | Refit: 0.608 | Stage: 0.765 | NMI: 0.000 | nu: [4.6, 4.7] | Best(R/S): 0.863/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp18_oasis_sagittal_128",
+      "gamma": 0.02,
+      "metrics_csv": "exp18_oasis_sagittal_128/robustness_eval/results/v4.1_cauchy_g0.02/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.02.csv",
+      "metrics_sha256": "99b37b6847198aa9a4dfcaa230d13dd57f1310395103a02ea8894837a811cc56",
+      "matched_stdout": "exp18_oasis_sagittal_128/run_logs/cauchy_v4.1_g0.02.log",
+      "stdout_sha256": "5ac5c15a7f55dbc4d18e9c6bb2b4a5e139e8a6bbe1f0fd9338ebb8d9fa042af4",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 8726.834 | Refit: 0.667 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.667/1.000"
+        },
+        {
+          "line": 113,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 515,
+          "text": "Epoch 100/100 | Loss: 5603.101 | Refit: 0.627 | Stage: 0.725 | NMI: 0.000 | nu: [4.6, 4.6] | Best(R/S): 0.784/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp18_oasis_sagittal_128",
+      "gamma": 0.04,
+      "metrics_csv": "exp18_oasis_sagittal_128/robustness_eval/results/v4.1_cauchy_g0.04/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.04.csv",
+      "metrics_sha256": "c6eb8966a508a6462b3d6e633c2dab0051aa68b9abfa15082b4e41d5a20c7a18",
+      "matched_stdout": "exp18_oasis_sagittal_128/run_logs/cauchy_v4.1_g0.04.log",
+      "stdout_sha256": "c6f82018120b42508adc98201e12ce183126c41386d43fa2620af045d108396f",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9323.522 | Refit: 0.706 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.706/1.000"
+        },
+        {
+          "line": 111,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 513,
+          "text": "Epoch 100/100 | Loss: 6295.886 | Refit: 0.549 | Stage: 0.667 | NMI: 0.000 | nu: [4.5, 4.6] | Best(R/S): 0.882/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp18_oasis_sagittal_128",
+      "gamma": 0.06,
+      "metrics_csv": "exp18_oasis_sagittal_128/robustness_eval/results/v4.1_cauchy_g0.06/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.06.csv",
+      "metrics_sha256": "0c58ae710fae0c4248713e153678882f88c01375b6c5cfc5ab91e6ec883dc3ac",
+      "matched_stdout": "exp18_oasis_sagittal_128/run_logs/cauchy_v4.1_g0.06.log",
+      "stdout_sha256": "afddb107fe30ccc03aebf35024292b4b3172d1b176960ddb8a034229fdc22ab8",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9374.452 | Refit: 0.706 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.706/1.000"
+        },
+        {
+          "line": 109,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 511,
+          "text": "Epoch 100/100 | Loss: 6794.828 | Refit: 0.627 | Stage: 0.686 | NMI: 0.000 | nu: [4.6, 4.7] | Best(R/S): 0.843/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp18_oasis_sagittal_128",
+      "gamma": 0.08,
+      "metrics_csv": "exp18_oasis_sagittal_128/robustness_eval/results/v4.1_cauchy_g0.08/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.08.csv",
+      "metrics_sha256": "9228fc4620c589b724bcae1fd7615fce22893025b39c302ba60c2632123b53cb",
+      "matched_stdout": "exp18_oasis_sagittal_128/run_logs/cauchy_v4.1_g0.08.log",
+      "stdout_sha256": "9377334b9a8c598c62eca57b4cbbc19ac2f83117d5059782378977aaba7e7899",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9667.923 | Refit: 0.706 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.706/1.000"
+        },
+        {
+          "line": 107,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 509,
+          "text": "Epoch 100/100 | Loss: 7223.351 | Refit: 0.510 | Stage: 0.549 | NMI: 0.000 | nu: [4.5, 4.5] | Best(R/S): 0.765/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp18_oasis_sagittal_128",
+      "gamma": 0.1,
+      "metrics_csv": "exp18_oasis_sagittal_128/robustness_eval/results/v4.1_cauchy_g0.1/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.1.csv",
+      "metrics_sha256": "57220fe21392a3bc5c4cfc769d0d43516cd7e4c3fbf795e9f17a4c4402e99b05",
+      "matched_stdout": "exp18_oasis_sagittal_128/run_logs/cauchy_v4.1_g0.1.log",
+      "stdout_sha256": "4b193ed27d4d32e27ae99c13e0735d407efae5280c7bef7a88b08763f52897d7",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9547.828 | Refit: 0.706 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.706/1.000"
+        },
+        {
+          "line": 107,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 509,
+          "text": "Epoch 100/100 | Loss: 7603.249 | Refit: 0.667 | Stage: 0.824 | NMI: 0.000 | nu: [4.6, 4.7] | Best(R/S): 0.843/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp18_oasis_sagittal_128",
+      "gamma": 0.12,
+      "metrics_csv": "exp18_oasis_sagittal_128/robustness_eval/results/v4.1_cauchy_g0.12/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.12.csv",
+      "metrics_sha256": "eabea3eec6607d9f2b2158b0d210ef9210410ff664b6ca241ad81c1d927ce517",
+      "matched_stdout": "exp18_oasis_sagittal_128/run_logs/cauchy_v4.1_g0.12.log",
+      "stdout_sha256": "4e698cb1ff136ca91aaae2997b39cce43347968e8810e32ded6743a00e232b1f",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9634.260 | Refit: 0.608 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.608/1.000"
+        },
+        {
+          "line": 111,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 513,
+          "text": "Epoch 100/100 | Loss: 7888.514 | Refit: 0.569 | Stage: 0.667 | NMI: 0.000 | nu: [4.5, 4.6] | Best(R/S): 0.843/1.000"
+        }
+      ]
+    },
+    {
+      "experiment": "exp18_oasis_sagittal_128",
+      "gamma": 0.14,
+      "metrics_csv": "exp18_oasis_sagittal_128/robustness_eval/results/v4.1_cauchy_g0.14/metrics_20260427_AdamW_lr0.001_bs32_cauchy_g0.14.csv",
+      "metrics_sha256": "7d0f001f970a9ada49238612ced8ee345928ee86e4b5610f57cdd81cc71c6aca",
+      "matched_stdout": "exp18_oasis_sagittal_128/run_logs/cauchy_v4.1_g0.14.log",
+      "stdout_sha256": "dc395ec6d86197df6d93e4393d914caebde606d9f682e89ff47bf2c5f827540c",
+      "stdout_epoch_losses_matching_csv": 100,
+      "csv_epochs": 100,
+      "directly_logged": {
+        "optimizer": "AdamW",
+        "lr": 0.001,
+        "batch_size": 32,
+        "w_elbo": 5.0,
+        "nu_init": 5.0,
+        "epochs": 100,
+        "gmm_prior_overwrite_epoch_20": true
+      },
+      "evidence": [
+        {
+          "line": 5,
+          "text": "w_elbo: 5.0 (fixed), nu_init: 5.0, lr: 0.001, batch_size: 32, optimizer: AdamW"
+        },
+        {
+          "line": 10,
+          "text": "Epoch 001/100 | Loss: 9788.256 | Refit: 0.608 | Stage: 1.000 | NMI: 0.000 | nu: [5.0, 5.0] | Best(R/S): 0.608/1.000"
+        },
+        {
+          "line": 109,
+          "text": "-> Overwrote VAE prior (means, logvars, pi) from refit GMM at epoch 20"
+        },
+        {
+          "line": 511,
+          "text": "Epoch 100/100 | Loss: 8138.501 | Refit: 0.608 | Stage: 0.745 | NMI: 0.000 | nu: [4.6, 4.8] | Best(R/S): 0.863/1.000"
+        }
+      ]
+    }
+  ],
+  "source_evidence": {
+    "exp2_gamma7": {
+      "config": {
+        "path": "exp2_gamma7/v4.1_tVaDE_ModeB/config.py",
+        "sha256": "0126060a8d764ea782448f6ce0dacf85c4e1a8734e7fbbef96ebc7d4b6277306"
+      },
+      "training_entry": {
+        "path": "exp2_gamma7/robustness_eval/v4.1/train_noisy.py",
+        "sha256": "3962b13e0e12beeaa415b1344a53a9e84b62156670c66cb282f43bed9a3a7915"
+      },
+      "loss": {
+        "path": "exp2_gamma7/v4.1_tVaDE_ModeB/training/trainer.py",
+        "sha256": "08ec98b001bd8e8f4f958891a438fb6d4a4de4d0671d3ba103cf8f9b65a2307e"
+      },
+      "data": {
+        "path": "exp2_gamma7/v4.1_tVaDE_ModeB/data/data_utils.py",
+        "sha256": "3dde872e296aefd40ee7351ee34dfd4fefca8f857ad653822e5c5cf918aea6c6"
+      },
+      "launcher": {
+        "path": "exp2_gamma7/run_all.sh",
+        "sha256": "d6ba84531d9c9c8e67e11f7c80d4d4174d9026ba7ddd251fa7f084d4b84c1ad1"
+      }
+    },
+    "exp12_fashion_mnist": {
+      "config": {
+        "path": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/config.py",
+        "sha256": "b2f6eebe039d948b40829f6c091d2ca95d8048693b409909bb87051313407293"
+      },
+      "training_entry": {
+        "path": "exp12_fashion_mnist/robustness_eval/v4.1/train_noisy.py",
+        "sha256": "9ce751d093139a7f0016927dea4f32380e096d517a5f6a126f40afd0bf8b9f32"
+      },
+      "loss": {
+        "path": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/training/trainer.py",
+        "sha256": "8559e76cd21240bd1502069dcf1b311f133e1dde4570f9d75d25cb365c5c178d"
+      },
+      "data": {
+        "path": "exp12_fashion_mnist/v4.1_tVaDE_ModeB/data/data_utils.py",
+        "sha256": "7d69bed93aeccc967538a50977b1803f1409a7d531982311d2527c68bf89f567"
+      },
+      "launcher": {
+        "path": "exp12_fashion_mnist/run_all.sh",
+        "sha256": "d6ba84531d9c9c8e67e11f7c80d4d4174d9026ba7ddd251fa7f084d4b84c1ad1"
+      }
+    },
+    "exp16_oasis_coronal_128": {
+      "config": {
+        "path": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/config.py",
+        "sha256": "bd413e8755e2d239086ff1743b903623fdc6363dba4b3c13b85d31dadc16f254"
+      },
+      "training_entry": {
+        "path": "exp16_oasis_coronal_128/robustness_eval/v4.1/train_noisy.py",
+        "sha256": "3962b13e0e12beeaa415b1344a53a9e84b62156670c66cb282f43bed9a3a7915"
+      },
+      "loss": {
+        "path": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/training/trainer.py",
+        "sha256": "08ec98b001bd8e8f4f958891a438fb6d4a4de4d0671d3ba103cf8f9b65a2307e"
+      },
+      "data": {
+        "path": "exp16_oasis_coronal_128/v4.1_tVaDE_ModeB/data/data_utils.py",
+        "sha256": "f7468f35540f86664a8a77020da5346d2a5101e3c997d3d2dd0ae3e5d08cefd8"
+      },
+      "launcher": {
+        "path": "exp16_oasis_coronal_128/run_all.sh",
+        "sha256": "d6ba84531d9c9c8e67e11f7c80d4d4174d9026ba7ddd251fa7f084d4b84c1ad1"
+      }
+    },
+    "exp17_oasis_axial_128": {
+      "config": {
+        "path": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/config.py",
+        "sha256": "bd413e8755e2d239086ff1743b903623fdc6363dba4b3c13b85d31dadc16f254"
+      },
+      "training_entry": {
+        "path": "exp17_oasis_axial_128/robustness_eval/v4.1/train_noisy.py",
+        "sha256": "3962b13e0e12beeaa415b1344a53a9e84b62156670c66cb282f43bed9a3a7915"
+      },
+      "loss": {
+        "path": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/training/trainer.py",
+        "sha256": "08ec98b001bd8e8f4f958891a438fb6d4a4de4d0671d3ba103cf8f9b65a2307e"
+      },
+      "data": {
+        "path": "exp17_oasis_axial_128/v4.1_tVaDE_ModeB/data/data_utils.py",
+        "sha256": "f7468f35540f86664a8a77020da5346d2a5101e3c997d3d2dd0ae3e5d08cefd8"
+      },
+      "launcher": {
+        "path": "exp17_oasis_axial_128/run_all.sh",
+        "sha256": "d6ba84531d9c9c8e67e11f7c80d4d4174d9026ba7ddd251fa7f084d4b84c1ad1"
+      }
+    },
+    "exp18_oasis_sagittal_128": {
+      "config": {
+        "path": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/config.py",
+        "sha256": "bd413e8755e2d239086ff1743b903623fdc6363dba4b3c13b85d31dadc16f254"
+      },
+      "training_entry": {
+        "path": "exp18_oasis_sagittal_128/robustness_eval/v4.1/train_noisy.py",
+        "sha256": "3962b13e0e12beeaa415b1344a53a9e84b62156670c66cb282f43bed9a3a7915"
+      },
+      "loss": {
+        "path": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/training/trainer.py",
+        "sha256": "08ec98b001bd8e8f4f958891a438fb6d4a4de4d0671d3ba103cf8f9b65a2307e"
+      },
+      "data": {
+        "path": "exp18_oasis_sagittal_128/v4.1_tVaDE_ModeB/data/data_utils.py",
+        "sha256": "f7468f35540f86664a8a77020da5346d2a5101e3c997d3d2dd0ae3e5d08cefd8"
+      },
+      "launcher": {
+        "path": "exp18_oasis_sagittal_128/run_all.sh",
+        "sha256": "d6ba84531d9c9c8e67e11f7c80d4d4174d9026ba7ddd251fa7f084d4b84c1ad1"
+      }
+    }
+  },
+  "source_supported_not_independently_logged": {
+    "seed": 42,
+    "weight_decay": 0.0001,
+    "pretraining_epochs": 0,
+    "adamw_parameter_groups": "all model parameters at lr=0.001",
+    "objective": "pixel-and-batch-summed BCE + 5 * batch-mean analytic prior penalty",
+    "gradient_clipping_max_norm": 5,
+    "split": "seeded 80/20 of 60000 training images, or 253 MRI subjects",
+    "official_10000_test_partition_used": false,
+    "latent_dimensions": {
+      "mnist": 8,
+      "fashion_mnist": 8,
+      "oasis": 32
+    },
+    "gmm": "train embeddings, full covariance, n_init=10, random_state=0",
+    "noise": "clipped additive Cauchy, resampled on access for training and evaluation",
+    "fashion_heavy_evaluation": "epoch 1, every 10, epoch 20, final, and improved post-warmup test reconstruction",
+    "selection": "after epoch 25: MNIST/Fashion max refit accuracy, reporting native ACC/ARI/NMI; MRI min test reconstruction, reporting refit Sil/DB"
+  },
+  "qualification": "Stdout and raw CSVs prove the logged fields belong to the reported runs. Other fields are supported by available source, whose exact historical revision was not snapshotted per run. Do not misrepresent those as independently logged facts."
+}

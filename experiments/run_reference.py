@@ -22,12 +22,41 @@ def main():
     p.add_argument('--device', default='cpu')
     p.add_argument('--threads', type=int, default=4)
     p.add_argument('--workers', type=int, default=2)
+    p.add_argument('--gmm-dtype', choices=['float64', 'original'], default='float64',
+                   help='Use float64 GMM covariance estimation to avoid float32 Cholesky failures; model training remains float32')
+    p.add_argument('--train-silhouette-samples', type=int, default=0,
+                   help='Optional fixed subsample for training-only Silhouette diagnostics; test metrics, training and selection remain full-data')
     args = p.parse_args()
     if args.gamma < 0 or args.epochs < 1 or args.samples_per_class < 2:
         p.error('gamma >= 0, epochs >= 1, samples-per-class >= 2 required')
+    if args.train_silhouette_samples < 0 or args.train_silhouette_samples == 1:
+        p.error('train-silhouette-samples must be zero or at least two')
     args.output = args.output.resolve()
     args.output.mkdir(parents=True, exist_ok=False)
     entry, _ = load_reference(args.dataset, args.data_root, args.device, args.threads, args.workers)
+    if args.gmm_dtype == 'float64':
+        import numpy as np
+        original_refit = entry.refit_gmm
+        def stable_refit(latent, *pos, **kw):
+            return original_refit(np.asarray(latent, dtype=np.float64), *pos, **kw)
+        entry.refit_gmm = stable_refit
+    if args.train_silhouette_samples:
+        import numpy as np
+        from training import trainer
+        from utils import clustering
+        original_metrics = trainer.compute_label_free_metrics
+        def sampled_training_metrics(z, stage, refit, k, prefix=''):
+            if prefix != 'train_' or len(z) <= args.train_silhouette_samples:
+                return original_metrics(z, stage, refit, k, prefix)
+            # Local RandomState: this diagnostic must not consume the training RNG.
+            indices = np.random.RandomState(0).choice(len(z), args.train_silhouette_samples, replace=False)
+            result = original_metrics(z[indices], stage[indices], refit[indices], k, prefix)
+            for name, labels in [('stage', stage), ('refit', refit)]:
+                result[f'{prefix}{name}_size_entropy'] = clustering.cluster_size_entropy(labels, k)
+                result[f'{prefix}{name}_davies_bouldin'] = clustering.safe_davies_bouldin(z, labels)
+            result['train_silhouette_samples'] = len(indices)
+            return result
+        trainer.compute_label_free_metrics = sampled_training_metrics
     entry.CFG.epoch_num = args.epochs
     entry.CFG.seed = args.seed
     entry.CFG.num_samples_per_class = args.samples_per_class

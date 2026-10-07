@@ -1,0 +1,20 @@
+{
+  "python": "3.12.13",
+  "platform": "Linux-5.15.0-186-generic-x86_64-with-glibc2.35",
+  "packages": {
+    "torch": "2.11.0",
+    "torchvision": "0.26.0",
+    "numpy": "2.4.6",
+    "scipy": "1.17.1",
+    "scikit-learn": "1.9.0",
+    "pandas": "3.0.5",
+    "matplotlib": "3.11.0",
+    "Pillow": "12.2.0"
+  },
+  "gpu": "NVIDIA RTX 5880 Ada Generation",
+  "cuda_build": "13.0",
+  "seed": 42,
+  "threads": 4,
+  "workers": 2,
+  "note": "Fresh-run environment, not asserted to be the historical environment."
+}

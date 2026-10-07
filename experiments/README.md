@@ -8,6 +8,20 @@ The portable launcher chooses data, output, device, and epoch settings without
 overwriting the original experiment directories. It uses the installed wheel's
 `TVaDE28`/`TVaDE128`, so training and checkpoint evaluation exercise the package.
 
+The portable launcher estimates GMM covariances in float64 by default. A fresh
+sagittal-MRI run exposed a float32 Cholesky failure with current scikit-learn;
+upcasting embeddings preserves their values and the covariance model while
+improving numerical accuracy. Neural-network training remains float32. The
+run manifest records this choice; `--gmm-dtype original` selects the archived
+input dtype explicitly. The archived source files themselves are unchanged.
+
+For large digit/clothing runs, `--train-silhouette-samples 2000` can reduce the
+quadratic cost of the **training-only** Silhouette diagnostic. Test metrics,
+train ACC/ARI/NMI/DB/cluster counts, GMM fitting, checkpoint selection, and all
+gradient updates still use the complete respective split. Sampling uses an
+isolated fixed RNG and is recorded in the run manifest and metric column;
+the default 0 retains the original full training-set diagnostic.
+
 Read [the reproduction report](../docs/reproduction.md) first. These are the
 archived implementation settings, not a claim that the manuscript's different
 Adam/pretraining description has been reproduced.
@@ -53,6 +67,22 @@ The launcher saves the legacy reconstruction-selected `best_vae.pth` and adds
 `best_refit_vae.pth`, each with an epoch/selection metadata JSON. The latter is
 needed to retain the epoch used by the historical MNIST/Fashion table. This
 selection uses held-out labels and should be disclosed in benchmark comparisons.
+
+After a full 100-epoch run, compare it with the same-condition archived target:
+
+```bash
+python experiments/summarize_reference.py --run ./outputs/mnist-g012 \
+  --output ./outputs/mnist-comparison.json
+```
+
+Repeat `--run` for several completed runs. For MRI, repeat `--clean` with a
+separately trained gamma=0 run for each view, using the same seed and settings.
+The script selects epochs using the historical rule, computes per-cluster PSNR
+with Hungarian matching, and aggregates MRI only when all three views are
+present. It refuses incomplete runs. JSON reports retain raw values, differences,
+configuration and source hashes; they do not substitute archived scores for
+fresh measurements. The PSNR reference is each method's own clean prototype,
+not a shared subject-level ground-truth image.
 
 A small training functionality check, **not a paper benchmark**:
 

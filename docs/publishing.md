@@ -2,11 +2,11 @@
 
 Target GitHub repository: https://github.com/xuzhikangnba/torch-tvae
 
-The 0.2.0 candidate includes the paper's original multi-cluster models and a
-completed audit. Exact paper reproduction remains unresolved; see
-reproduction.md. Do not describe installation or unit-test success as full
-benchmark reproduction. The current release is staged locally pending the
-author's decision on those documented discrepancies.
+The 0.3.1 candidate includes the basic single-component t-VAE, the paper's
+original multi-cluster models, and portable experiment workflows. The author
+requested fresh train/test validation before upload; see reproduction.md and
+the fresh comparison reports for the exact scope. Installation and unit tests
+alone do not establish benchmark reproduction.
 
 The arXiv manuscript is handled separately, using the accepted final source
 supplied by the authors. Add its identifier to README and CITATION.cff after
@@ -21,17 +21,17 @@ checkpoints, local environments, and credentials outside the repository.
 ```bash
 git remote set-url origin https://github.com/xuzhikangnba/torch-tvae.git
 git push -u origin main
-git tag v0.2.0
-git push origin v0.2.0
+git tag v0.3.1
+git push origin v0.3.1
 ```
 
 Use the source install command in README until the PyPI release is published.
-For reproducibility, users may pin the Git revision or the v0.2.0 tag.
+For reproducibility, users may pin the Git revision or the v0.3.1 tag.
 
 ## Build and inspect
 
 ```bash
-python -m pip install '.[dev]'
+python -m pip install '.[dev,experiments]'
 python -m unittest discover -s tests -v
 python -m build
 python -m twine check dist/*
@@ -50,7 +50,7 @@ index is only used for this distribution.
 
 ```bash
 python -m twine upload --repository testpypi dist/*
-python -m pip install --index-url https://test.pypi.org/simple/ --no-deps torch-tvae==0.2.0
+python -m pip install --index-url https://test.pypi.org/simple/ --no-deps torch-tvae==0.3.1
 ```
 
 After that validation, the author can publish the same artifacts to PyPI:

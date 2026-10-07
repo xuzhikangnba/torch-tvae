@@ -1,0 +1,436 @@
+{
+  "source": "accepted-paper supporting selected-epoch table",
+  "source_file": "paper_results/tables/best_epoch_all.csv",
+  "source_sha256": "52e07ba47b67415429d2ddc257f0a8f295deb43d118d3fde8619513b4c98757c",
+  "targets": [
+    {
+      "dataset": "mnist",
+      "gamma": 0.0,
+      "selected_epoch": 78,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.813,
+        "test_stage_ari": 0.725,
+        "test_stage_nmi": 0.775
+      }
+    },
+    {
+      "dataset": "mnist",
+      "gamma": 0.02,
+      "selected_epoch": 87,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.791,
+        "test_stage_ari": 0.697,
+        "test_stage_nmi": 0.756
+      }
+    },
+    {
+      "dataset": "mnist",
+      "gamma": 0.04,
+      "selected_epoch": 29,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.887,
+        "test_stage_ari": 0.771,
+        "test_stage_nmi": 0.781
+      }
+    },
+    {
+      "dataset": "mnist",
+      "gamma": 0.06,
+      "selected_epoch": 100,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.767,
+        "test_stage_ari": 0.677,
+        "test_stage_nmi": 0.763
+      }
+    },
+    {
+      "dataset": "mnist",
+      "gamma": 0.08,
+      "selected_epoch": 44,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.785,
+        "test_stage_ari": 0.68,
+        "test_stage_nmi": 0.75
+      }
+    },
+    {
+      "dataset": "mnist",
+      "gamma": 0.1,
+      "selected_epoch": 40,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.766,
+        "test_stage_ari": 0.662,
+        "test_stage_nmi": 0.724
+      }
+    },
+    {
+      "dataset": "mnist",
+      "gamma": 0.12,
+      "selected_epoch": 57,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.832,
+        "test_stage_ari": 0.715,
+        "test_stage_nmi": 0.751
+      }
+    },
+    {
+      "dataset": "mnist",
+      "gamma": 0.14,
+      "selected_epoch": 43,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.76,
+        "test_stage_ari": 0.666,
+        "test_stage_nmi": 0.749
+      }
+    },
+    {
+      "dataset": "fashion_mnist",
+      "gamma": 0.0,
+      "selected_epoch": 92,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.606,
+        "test_stage_ari": 0.463,
+        "test_stage_nmi": 0.613
+      }
+    },
+    {
+      "dataset": "fashion_mnist",
+      "gamma": 0.02,
+      "selected_epoch": 90,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.586,
+        "test_stage_ari": 0.445,
+        "test_stage_nmi": 0.594
+      }
+    },
+    {
+      "dataset": "fashion_mnist",
+      "gamma": 0.04,
+      "selected_epoch": 37,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.547,
+        "test_stage_ari": 0.415,
+        "test_stage_nmi": 0.585
+      }
+    },
+    {
+      "dataset": "fashion_mnist",
+      "gamma": 0.06,
+      "selected_epoch": 50,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.577,
+        "test_stage_ari": 0.409,
+        "test_stage_nmi": 0.56
+      }
+    },
+    {
+      "dataset": "fashion_mnist",
+      "gamma": 0.08,
+      "selected_epoch": 45,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.534,
+        "test_stage_ari": 0.393,
+        "test_stage_nmi": 0.561
+      }
+    },
+    {
+      "dataset": "fashion_mnist",
+      "gamma": 0.1,
+      "selected_epoch": 48,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.553,
+        "test_stage_ari": 0.414,
+        "test_stage_nmi": 0.577
+      }
+    },
+    {
+      "dataset": "fashion_mnist",
+      "gamma": 0.12,
+      "selected_epoch": 26,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.525,
+        "test_stage_ari": 0.392,
+        "test_stage_nmi": 0.571
+      }
+    },
+    {
+      "dataset": "fashion_mnist",
+      "gamma": 0.14,
+      "selected_epoch": 30,
+      "selection": "acc",
+      "metrics": {
+        "test_stage_accuracy": 0.563,
+        "test_stage_ari": 0.397,
+        "test_stage_nmi": 0.544
+      }
+    },
+    {
+      "dataset": "oasis_coronal",
+      "gamma": 0.0,
+      "selected_epoch": 93,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.2176,
+        "test_refit_davies_bouldin": 1.5094
+      }
+    },
+    {
+      "dataset": "oasis_coronal",
+      "gamma": 0.02,
+      "selected_epoch": 95,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.2669,
+        "test_refit_davies_bouldin": 1.335
+      }
+    },
+    {
+      "dataset": "oasis_coronal",
+      "gamma": 0.04,
+      "selected_epoch": 82,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.2086,
+        "test_refit_davies_bouldin": 1.5756
+      }
+    },
+    {
+      "dataset": "oasis_coronal",
+      "gamma": 0.06,
+      "selected_epoch": 80,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.2899,
+        "test_refit_davies_bouldin": 1.2631
+      }
+    },
+    {
+      "dataset": "oasis_coronal",
+      "gamma": 0.08,
+      "selected_epoch": 94,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.2889,
+        "test_refit_davies_bouldin": 1.2543
+      }
+    },
+    {
+      "dataset": "oasis_coronal",
+      "gamma": 0.1,
+      "selected_epoch": 60,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.3493,
+        "test_refit_davies_bouldin": 1.0023
+      }
+    },
+    {
+      "dataset": "oasis_coronal",
+      "gamma": 0.12,
+      "selected_epoch": 60,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.3918,
+        "test_refit_davies_bouldin": 0.9712
+      }
+    },
+    {
+      "dataset": "oasis_coronal",
+      "gamma": 0.14,
+      "selected_epoch": 76,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.4018,
+        "test_refit_davies_bouldin": 0.9709
+      }
+    },
+    {
+      "dataset": "oasis_axial",
+      "gamma": 0.0,
+      "selected_epoch": 90,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.4199,
+        "test_refit_davies_bouldin": 0.8987
+      }
+    },
+    {
+      "dataset": "oasis_axial",
+      "gamma": 0.02,
+      "selected_epoch": 72,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.3758,
+        "test_refit_davies_bouldin": 0.9477
+      }
+    },
+    {
+      "dataset": "oasis_axial",
+      "gamma": 0.04,
+      "selected_epoch": 92,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.3413,
+        "test_refit_davies_bouldin": 1.0709
+      }
+    },
+    {
+      "dataset": "oasis_axial",
+      "gamma": 0.06,
+      "selected_epoch": 92,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.3884,
+        "test_refit_davies_bouldin": 1.021
+      }
+    },
+    {
+      "dataset": "oasis_axial",
+      "gamma": 0.08,
+      "selected_epoch": 92,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.4035,
+        "test_refit_davies_bouldin": 0.9741
+      }
+    },
+    {
+      "dataset": "oasis_axial",
+      "gamma": 0.1,
+      "selected_epoch": 85,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.4131,
+        "test_refit_davies_bouldin": 0.9166
+      }
+    },
+    {
+      "dataset": "oasis_axial",
+      "gamma": 0.12,
+      "selected_epoch": 85,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.4361,
+        "test_refit_davies_bouldin": 0.855
+      }
+    },
+    {
+      "dataset": "oasis_axial",
+      "gamma": 0.14,
+      "selected_epoch": 85,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.4361,
+        "test_refit_davies_bouldin": 0.869
+      }
+    },
+    {
+      "dataset": "oasis_sagittal",
+      "gamma": 0.0,
+      "selected_epoch": 80,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.341,
+        "test_refit_davies_bouldin": 1.1344
+      }
+    },
+    {
+      "dataset": "oasis_sagittal",
+      "gamma": 0.02,
+      "selected_epoch": 76,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.3196,
+        "test_refit_davies_bouldin": 1.1878
+      }
+    },
+    {
+      "dataset": "oasis_sagittal",
+      "gamma": 0.04,
+      "selected_epoch": 94,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.2924,
+        "test_refit_davies_bouldin": 1.3219
+      }
+    },
+    {
+      "dataset": "oasis_sagittal",
+      "gamma": 0.06,
+      "selected_epoch": 95,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.2274,
+        "test_refit_davies_bouldin": 1.504
+      }
+    },
+    {
+      "dataset": "oasis_sagittal",
+      "gamma": 0.08,
+      "selected_epoch": 91,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.2927,
+        "test_refit_davies_bouldin": 1.3254
+      }
+    },
+    {
+      "dataset": "oasis_sagittal",
+      "gamma": 0.1,
+      "selected_epoch": 94,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.3341,
+        "test_refit_davies_bouldin": 1.1498
+      }
+    },
+    {
+      "dataset": "oasis_sagittal",
+      "gamma": 0.12,
+      "selected_epoch": 94,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.2249,
+        "test_refit_davies_bouldin": 1.4718
+      }
+    },
+    {
+      "dataset": "oasis_sagittal",
+      "gamma": 0.14,
+      "selected_epoch": 75,
+      "selection": "recon",
+      "metrics": {
+        "test_refit_silhouette": 0.3154,
+        "test_refit_davies_bouldin": 1.1249
+      }
+    }
+  ],
+  "seven_noise_means": {
+    "mnist": {
+      "accuracy": 0.7982857142857143,
+      "ari": 0.6954285714285715,
+      "nmi": 0.7534285714285714
+    },
+    "fashion_mnist": {
+      "accuracy": 0.555,
+      "ari": 0.4092857142857143,
+      "nmi": 0.5702857142857143
+    }
+  },
+  "interpretation": "Targets are archived paper evidence, never fresh results. MRI native accuracy is meaningless because labels are unavailable."
+}

@@ -3,5 +3,5 @@
 from .priors import PriorTerms, StudentTPrior
 from .models import ForwardOutput, LossOutput, TVAE
 
-__version__ = "0.2.0"
+__version__ = "0.3.1"
 __all__ = ["StudentTPrior", "PriorTerms", "TVAE", "ForwardOutput", "LossOutput"]

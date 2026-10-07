@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "torch-tvae"
-version = "0.2.0"
+version = "0.3.1"
 description = "Student-t latent priors and label-free VAEs with analytic Gaussian-Gamma regularization"
 readme = "README.md"
 requires-python = ">=3.10"
@@ -30,6 +30,7 @@ Issues = "https://github.com/xuzhikangnba/torch-tvae/issues"
 
 [project.scripts]
 tvae-mnist = "tvae.cli:main"
+tvae-paper-train = "tvae.paper_experiment:main"
 
 [tool.setuptools.packages.find]
 where = ["src"]

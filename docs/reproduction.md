@@ -7,6 +7,35 @@ Audit target: the author's `paper/20261006/neurips_2026.tex`, SHA256
 not verified.** See the machine-readable reports in `experiments/audit_results/`.
 This status must not be replaced with a generic “reproduces the paper” claim.
 
+Update: [the recovered configuration](recovered_configuration.md) now ties
+40 historical stdout logs to all 4,000 corresponding epoch losses in the
+paper's source CSVs. It directly confirms AdamW/0.001/32/100 epochs and the
+epoch-20 GMM overwrite. Fresh experiments are running to validate that recipe.
+
+## Fresh MRI training completed
+
+Six complete 100-epoch runs cover all three MRI views at gamma=0 and 0.12.
+They use the installed 0.3.1 model classes and the recovered configuration,
+with float64 GMM covariance estimation for numerical stability. At gamma=0.12:
+
+| Three-view mean | Fresh run | Paper | Difference |
+|---|---:|---:|---:|
+| Refit Silhouette | 0.313567 | 0.350933 | -0.037367 |
+| Refit Davies–Bouldin | 1.205067 | 1.099333 | +0.105733 |
+| Self-clean atlas PSNR (dB) | 20.071248 | 20.013365 | +0.057884 |
+
+Silhouette and DB fall within the exploratory bands specified before reading
+fresh results (0.05 absolute and 15% relative respectively). PSNR had no
+predeclared acceptance threshold; the actual difference is shown. All three
+fresh noisy views also have finite native Silhouette scores, indicating that
+their native assignments retain two occupied clusters. Individual views vary
+more than these averages; see every value, selected epoch, source hash, and
+per-cluster PSNR in `experiments/audit_results/fresh_mri_gamma012.json`.
+
+These results validate this condition and recipe; they do not establish the
+seven-noise average, every baseline, or confidence intervals across seeds.
+MNIST/Fashion-MNIST runs with the same historical schedule are still in progress.
+
 ## Completed checks
 
 - Installed non-editable 0.2.0 wheel, including the original 28x28 and 128x128

@@ -1,0 +1,414 @@
+{
+  "protocol": "Recovered historical configuration; same-condition comparisons",
+  "scope": "Only listed runs. Does not verify the seven-noise average or all paper claims.",
+  "selection_note": "Digits/clothing use held-out refit labels for checkpoint selection, then report native scores.",
+  "psnr_note": "Self-clean decoded prototypes, historical 128x127 montage crop; not patient-level ground truth.",
+  "runs": [
+    {
+      "dataset": "oasis_coronal",
+      "gamma": 0.12,
+      "selected_epoch": 100,
+      "selection": "test_loss_recon",
+      "completed_epochs": 100,
+      "csv_sha256": "6ab72889c92e554941152c68c68a67acde146ced6d68c82becd49a7b1ef5e1ad",
+      "run_config_sha256": "6c2c670bc8da8d780b10e002adcd9fe8733faa4f82a2aff5f20a9a142a8a1ebb",
+      "configuration": {
+        "dataset": "oasis_coronal",
+        "gamma": 0.12,
+        "epochs": 100,
+        "seed": 42,
+        "samples_per_class": 12800,
+        "device": "cuda:3",
+        "threads": 4,
+        "workers": 2,
+        "gmm_dtype": "float64"
+      },
+      "metrics": {
+        "train_loss": 8072.664,
+        "train_loss_recon": 8064.015,
+        "train_loss_elbo": 1.73,
+        "test_loss": 8118.068,
+        "test_loss_recon": 8110.134,
+        "test_loss_elbo": 1.587,
+        "train_stage_size_entropy": 0.9818,
+        "train_refit_size_entropy": 0.988,
+        "train_stage_silhouette": 0.2331,
+        "train_refit_silhouette": 0.2381,
+        "train_stage_davies_bouldin": 1.5119,
+        "train_refit_davies_bouldin": 1.49,
+        "test_stage_size_entropy": 0.8974,
+        "test_refit_size_entropy": 0.9774,
+        "test_stage_silhouette": 0.2717,
+        "test_refit_silhouette": 0.2509,
+        "test_stage_davies_bouldin": 1.2379,
+        "test_refit_davies_bouldin": 1.3905
+      },
+      "comparison": {
+        "test_refit_silhouette": {
+          "fresh": 0.2509,
+          "paper": 0.3918,
+          "difference": -0.14089999999999997,
+          "absolute_difference": 0.14089999999999997,
+          "relative_difference": 0.35962225625319033,
+          "within_exploratory_band": false
+        },
+        "test_refit_davies_bouldin": {
+          "fresh": 1.3905,
+          "paper": 0.9712,
+          "difference": 0.4193000000000001,
+          "absolute_difference": 0.4193000000000001,
+          "relative_difference": 0.43173393739703475,
+          "within_exploratory_band": false
+        }
+      },
+      "psnr": {
+        "clusters": [
+          {
+            "noisy_cluster": 0,
+            "clean_cluster": 0,
+            "psnr": 20.61729086246445
+          },
+          {
+            "noisy_cluster": 1,
+            "clean_cluster": 1,
+            "psnr": 20.155986811415858
+          }
+        ],
+        "mean": 20.386638836940154,
+        "cell_shape": [
+          128,
+          127
+        ],
+        "clean_epoch": 81,
+        "noisy_atlas_sha256": "0e93d37eac0ff5e8fb9ffeb7e6096506121566bf81adc04cf58fc6ba4f545801",
+        "clean_atlas_sha256": "529385d924a56787661bf6cbe85c68b7a1a22456ac5204d078de69fa124fc75f",
+        "reference": "own independently trained clean-condition refit atlas",
+        "matching": "Hungarian minimum squared pixel error",
+        "data_range": 1
+      }
+    },
+    {
+      "dataset": "oasis_axial",
+      "gamma": 0.12,
+      "selected_epoch": 96,
+      "selection": "test_loss_recon",
+      "completed_epochs": 100,
+      "csv_sha256": "6ec6f7efedd340745184608381ce46701b069b02145c5adda3e0ec0cba0aa3c1",
+      "run_config_sha256": "de761cbf5d6912336f827a95cca6b6e41382cecc1f9eb07c58879610e44594ea",
+      "configuration": {
+        "dataset": "oasis_axial",
+        "gamma": 0.12,
+        "epochs": 100,
+        "seed": 42,
+        "samples_per_class": 12800,
+        "device": "cuda:0",
+        "threads": 4,
+        "workers": 2,
+        "gmm_dtype": "float64"
+      },
+      "metrics": {
+        "train_loss": 7498.436,
+        "train_loss_recon": 7493.572,
+        "train_loss_elbo": 0.973,
+        "test_loss": 7515.061,
+        "test_loss_recon": 7509.909,
+        "test_loss_elbo": 1.031,
+        "train_stage_size_entropy": 0.9795,
+        "train_refit_size_entropy": 0.988,
+        "train_stage_silhouette": 0.2915,
+        "train_refit_silhouette": 0.2956,
+        "train_stage_davies_bouldin": 1.2726,
+        "train_refit_davies_bouldin": 1.2636,
+        "test_stage_size_entropy": 0.9975,
+        "test_refit_size_entropy": 0.9864,
+        "test_stage_silhouette": 0.3671,
+        "test_refit_silhouette": 0.3806,
+        "test_stage_davies_bouldin": 1.0268,
+        "test_refit_davies_bouldin": 0.9875
+      },
+      "comparison": {
+        "test_refit_silhouette": {
+          "fresh": 0.3806,
+          "paper": 0.4361,
+          "difference": -0.055499999999999994,
+          "absolute_difference": 0.055499999999999994,
+          "relative_difference": 0.12726438890162806,
+          "within_exploratory_band": false
+        },
+        "test_refit_davies_bouldin": {
+          "fresh": 0.9875,
+          "paper": 0.855,
+          "difference": 0.13250000000000006,
+          "absolute_difference": 0.13250000000000006,
+          "relative_difference": 0.1549707602339182,
+          "within_exploratory_band": false
+        }
+      },
+      "psnr": {
+        "clusters": [
+          {
+            "noisy_cluster": 0,
+            "clean_cluster": 1,
+            "psnr": 19.793205589123392
+          },
+          {
+            "noisy_cluster": 1,
+            "clean_cluster": 0,
+            "psnr": 19.75984408140869
+          }
+        ],
+        "mean": 19.77652483526604,
+        "cell_shape": [
+          128,
+          127
+        ],
+        "clean_epoch": 86,
+        "noisy_atlas_sha256": "223816b69d8f5f848e0a2a4321861d32096f7561302d48c66157c1fa8fa0e56f",
+        "clean_atlas_sha256": "9352180aa266424015ca98f9238021d643aa6cb27d77563d867f8d601846739b",
+        "reference": "own independently trained clean-condition refit atlas",
+        "matching": "Hungarian minimum squared pixel error",
+        "data_range": 1
+      }
+    },
+    {
+      "dataset": "oasis_sagittal",
+      "gamma": 0.12,
+      "selected_epoch": 74,
+      "selection": "test_loss_recon",
+      "completed_epochs": 100,
+      "csv_sha256": "b381b8973b5bf3286db1952a0d412747ee85c96e44e945f20e71980d3c128477",
+      "run_config_sha256": "4f86b1367464b11cf58749310b0e68c5920b3c107ef5fd586a478d6445381276",
+      "configuration": {
+        "dataset": "oasis_sagittal",
+        "gamma": 0.12,
+        "epochs": 100,
+        "seed": 42,
+        "samples_per_class": 12800,
+        "device": "cuda:0",
+        "threads": 4,
+        "workers": 2,
+        "gmm_dtype": "float64"
+      },
+      "metrics": {
+        "train_loss": 7883.978,
+        "train_loss_recon": 7877.97,
+        "train_loss_elbo": 1.202,
+        "test_loss": 7883.31,
+        "test_loss_recon": 7877.24,
+        "test_loss_elbo": 1.214,
+        "train_stage_size_entropy": 0.9818,
+        "train_refit_size_entropy": 0.9655,
+        "train_stage_silhouette": 0.2938,
+        "train_refit_silhouette": 0.3218,
+        "train_stage_davies_bouldin": 1.2201,
+        "train_refit_davies_bouldin": 1.1732,
+        "test_stage_size_entropy": 0.9662,
+        "test_refit_size_entropy": 0.9662,
+        "test_stage_silhouette": 0.2581,
+        "test_refit_silhouette": 0.3092,
+        "test_stage_davies_bouldin": 1.2644,
+        "test_refit_davies_bouldin": 1.2372
+      },
+      "comparison": {
+        "test_refit_silhouette": {
+          "fresh": 0.3092,
+          "paper": 0.2249,
+          "difference": 0.08429999999999999,
+          "absolute_difference": 0.08429999999999999,
+          "relative_difference": 0.37483325922632277,
+          "within_exploratory_band": false
+        },
+        "test_refit_davies_bouldin": {
+          "fresh": 1.2372,
+          "paper": 1.4718,
+          "difference": -0.23459999999999992,
+          "absolute_difference": 0.23459999999999992,
+          "relative_difference": 0.15939665715450463,
+          "within_exploratory_band": false
+        }
+      },
+      "psnr": {
+        "clusters": [
+          {
+            "noisy_cluster": 0,
+            "clean_cluster": 1,
+            "psnr": 20.235950592154776
+          },
+          {
+            "noisy_cluster": 1,
+            "clean_cluster": 0,
+            "psnr": 19.86521275223025
+          }
+        ],
+        "mean": 20.050581672192514,
+        "cell_shape": [
+          128,
+          127
+        ],
+        "clean_epoch": 81,
+        "noisy_atlas_sha256": "8f64701d56bc9f250afe5f083f8464b4bf2af3aaebb6e7ac3c89f8c662eff9bf",
+        "clean_atlas_sha256": "1e939a6503a1cb78d1ed78f6ce4c13707ecb5f65fc6cb15da03fef3d1e8ff2a2",
+        "reference": "own independently trained clean-condition refit atlas",
+        "matching": "Hungarian minimum squared pixel error",
+        "data_range": 1
+      }
+    }
+  ],
+  "clean_runs": [
+    {
+      "dataset": "oasis_coronal",
+      "gamma": 0.0,
+      "selected_epoch": 81,
+      "selection": "test_loss_recon",
+      "completed_epochs": 100,
+      "csv_sha256": "4cce8ad0ea5b053196ca476e72d5bccbdb3a9f7ff9d943f0469a21cc0923cf27",
+      "run_config_sha256": "d284a5f59131124b865b6ff916b09e8fc39fc606170cdf8d62c917dfc261d70a",
+      "configuration": {
+        "dataset": "oasis_coronal",
+        "gamma": 0.0,
+        "epochs": 100,
+        "seed": 42,
+        "samples_per_class": 12800,
+        "device": "cuda:0",
+        "threads": 4,
+        "workers": 2,
+        "gmm_dtype": "float64",
+        "train_silhouette_samples": 0
+      },
+      "metrics": {
+        "train_loss": 4923.18,
+        "train_loss_recon": 4914.027,
+        "train_loss_elbo": 1.831,
+        "test_loss": 5015.023,
+        "test_loss_recon": 5005.251,
+        "test_loss_elbo": 1.955,
+        "train_stage_size_entropy": 1.0,
+        "train_refit_size_entropy": 0.9715,
+        "train_stage_silhouette": 0.2329,
+        "train_refit_silhouette": 0.2463,
+        "train_stage_davies_bouldin": 1.5099,
+        "train_refit_davies_bouldin": 1.4013,
+        "test_stage_size_entropy": 0.9367,
+        "test_refit_size_entropy": 0.9526,
+        "test_stage_silhouette": 0.2267,
+        "test_refit_silhouette": 0.2466,
+        "test_stage_davies_bouldin": 1.552,
+        "test_refit_davies_bouldin": 1.3357
+      }
+    },
+    {
+      "dataset": "oasis_axial",
+      "gamma": 0.0,
+      "selected_epoch": 86,
+      "selection": "test_loss_recon",
+      "completed_epochs": 100,
+      "csv_sha256": "1ab2587c68126f8baef06c7954a43242428f850acdac6e41d7a7ea2c86b86524",
+      "run_config_sha256": "b8ffc48b86746a64c8a2ab027c9ef9ae4e694f4f7519e9e9c1f78c680c4cf556",
+      "configuration": {
+        "dataset": "oasis_axial",
+        "gamma": 0.0,
+        "epochs": 100,
+        "seed": 42,
+        "samples_per_class": 12800,
+        "device": "cuda:3",
+        "threads": 4,
+        "workers": 2,
+        "gmm_dtype": "float64",
+        "train_silhouette_samples": 0
+      },
+      "metrics": {
+        "train_loss": 3430.765,
+        "train_loss_recon": 3422.99,
+        "train_loss_elbo": 1.555,
+        "test_loss": 3520.595,
+        "test_loss_recon": 3512.12,
+        "test_loss_elbo": 1.695,
+        "train_stage_size_entropy": 0.9743,
+        "train_refit_size_entropy": 0.9989,
+        "train_stage_silhouette": 0.291,
+        "train_refit_silhouette": 0.2962,
+        "train_stage_davies_bouldin": 1.284,
+        "train_refit_davies_bouldin": 1.2659,
+        "test_stage_size_entropy": 0.9662,
+        "test_refit_size_entropy": 0.9931,
+        "test_stage_silhouette": 0.3882,
+        "test_refit_silhouette": 0.3751,
+        "test_stage_davies_bouldin": 0.9242,
+        "test_refit_davies_bouldin": 0.9689
+      }
+    },
+    {
+      "dataset": "oasis_sagittal",
+      "gamma": 0.0,
+      "selected_epoch": 81,
+      "selection": "test_loss_recon",
+      "completed_epochs": 100,
+      "csv_sha256": "bb5ae51fc89253a5d57e5ea3e6027c11cd4312a38626d89d8c826b1a5b16f5c0",
+      "run_config_sha256": "f659c31cb73573c928d392421b820abc2863bc25ba71722bc38756c410181c1a",
+      "configuration": {
+        "dataset": "oasis_sagittal",
+        "gamma": 0.0,
+        "epochs": 100,
+        "seed": 42,
+        "samples_per_class": 12800,
+        "device": "cuda:0",
+        "threads": 4,
+        "workers": 2,
+        "gmm_dtype": "float64",
+        "train_silhouette_samples": 0
+      },
+      "metrics": {
+        "train_loss": 4344.752,
+        "train_loss_recon": 4335.076,
+        "train_loss_elbo": 1.935,
+        "test_loss": 4406.827,
+        "test_loss_recon": 4396.016,
+        "test_loss_elbo": 2.162,
+        "train_stage_size_entropy": 0.9982,
+        "train_refit_size_entropy": 0.9623,
+        "train_stage_silhouette": 0.2319,
+        "train_refit_silhouette": 0.2621,
+        "train_stage_davies_bouldin": 1.6162,
+        "train_refit_davies_bouldin": 1.4966,
+        "test_stage_size_entropy": 0.9774,
+        "test_refit_size_entropy": 0.9183,
+        "test_stage_silhouette": 0.2027,
+        "test_refit_silhouette": 0.2451,
+        "test_stage_davies_bouldin": 1.598,
+        "test_refit_davies_bouldin": 1.4739
+      }
+    }
+  ],
+  "mri_aggregates": [
+    {
+      "gamma": 0.12,
+      "views": 3,
+      "comparison": {
+        "silhouette": {
+          "fresh": 0.3135666666666666,
+          "paper": 0.3509333333333333,
+          "difference": -0.037366666666666715,
+          "absolute_difference": 0.037366666666666715,
+          "relative_difference": 0.10647796352583601,
+          "within_exploratory_band": true
+        },
+        "davies_bouldin": {
+          "fresh": 1.2050666666666667,
+          "paper": 1.0993333333333333,
+          "difference": 0.10573333333333346,
+          "absolute_difference": 0.10573333333333346,
+          "relative_difference": 0.09617950272892674,
+          "within_exploratory_band": true
+        },
+        "psnr": {
+          "fresh": 20.071248448132902,
+          "paper": 20.01336493319764,
+          "difference": 0.05788351493526278,
+          "absolute_difference": 0.05788351493526278,
+          "relative_difference": 0.002892243015028779,
+          "within_exploratory_band": null
+        }
+      }
+    }
+  ]
+}

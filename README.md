@@ -12,7 +12,7 @@ Student's t Mixture VAEs for Robust Image Prototype Discovery**
 (accepted at NeurIPS 2026), by Zhikang Xu, Jiarui Xing, and Jian Wang. The arXiv
 link will be added when the preprint is available.
 
-Version 0.2.0 includes two interfaces: `TVAE` is the basic single-component model;
+Version 0.3.1 includes two interfaces: `TVAE` is the basic single-component model;
 `tvae.reference.TVaDE28` and `TVaDE128` preserve the original multi-component
 models and checkpoint parameter names for 28x28 images and 128x128 MRI.
 
@@ -24,6 +24,8 @@ epochs, and the manuscript's training description differs from the archived
 implementation. Read [the reproduction report](docs/reproduction.md) before
 interpreting these results. The basic `TVAE` is not a replacement for the paper
 experiment model. See also [the mathematical objective](docs/mathematics.md).
+The [recovered training configuration](docs/recovered_configuration.md) matches
+40 historical stdout logs to the exact CSVs supporting the paper's numbers.
 
 ## Install
 
@@ -45,7 +47,7 @@ python -m pip install .
 Or install a built wheel:
 
 ```bash
-python -m pip install dist/torch_tvae-0.2.0-py3-none-any.whl
+python -m pip install dist/torch_tvae-0.3.1-py3-none-any.whl
 ```
 
 **PyPI publication is pending.** The command `pip install torch-tvae` should
@@ -67,6 +69,66 @@ training scripts, a portable launcher, and fresh checkpoint evaluation commands
 are in [experiments](experiments/README.md). The experiment scripts are included
 in the Git checkout/source distribution; the model classes are included in the
 installable wheel. Data and model weights are not bundled.
+
+## Reproduce the recovered paper workflow
+
+The logs supporting the reported metrics use **AdamW, lr=0.001 for all
+parameters, batch size 32, 100 epochs, and a train-GMM prior initialization at
+epoch 20**. There is no separate reconstruction-only pretraining phase in this
+workflow. Use the portable launcher from a source checkout:
+
+```bash
+python -m pip install '.[experiments]'
+python experiments/run_reference.py --dataset mnist --data-root ./data \
+  --output ./outputs/mnist-g012 --gamma 0.12 --epochs 100 --device cuda:0 \
+  --gmm-dtype float64 --train-silhouette-samples 2000
+```
+
+Change the dataset to `fashion_mnist`, `oasis_coronal`, `oasis_axial`, or
+`oasis_sagittal`; MRI needs the prepared data described in
+[experiments](experiments/README.md). The basic `TVAE` example below is a
+separate single-component model, not this clustering benchmark.
+
+The recovered recipe differs from the accepted manuscript's optimizer and
+pretraining wording. See the [source evidence](docs/recovered_configuration.md)
+for the exact split, loss normalization, checkpoint-selection rule, and
+distinction between native and GMM-refit metrics. A diagnostic implementing the
+literal manuscript wording is described next; do not mix those two protocols.
+
+## Diagnostic of the manuscript's stated two-stage schedule
+
+The installed `tvae-paper-train` command uses the reference ResNet models, Adam
+with separate autoencoder/mixture learning rates (0.001/0.002), batch size 32,
+50 reconstruction-only pretraining epochs, and then 500 minibatch updates.
+This is the literal interpretation of the main text's “500 iterations.”
+`--main-epochs 450` or `--main-epochs 500` records the alternative durations
+mentioned elsewhere in the manuscript. These settings are being evaluated;
+successful execution is not evidence that paper metrics have been reproduced.
+
+```bash
+python -m pip install '.[experiments]'
+tvae-paper-train --dataset mnist --data-root ./data --output ./outputs/mnist-paper \
+  --device cuda:0 --gamma 0.12
+```
+
+Change `--dataset` to `fashion_mnist` or an MRI view (`oasis_coronal`,
+`oasis_axial`, `oasis_sagittal`). MRI needs the prepared NPZ files described in
+[experiments](experiments/README.md). The command reports both train and test
+metrics, separating native assignments from a GMM fitted only on train embeddings.
+Digits/clothing use the official 60,000/10,000 split by default; MRI uses a
+seeded 80/20 subject split. `--split seeded_80_20` explicitly selects the archived
+digit/clothing split for a separate comparison. Evaluation noise is held fixed.
+
+Both reconstruction and prior loss use a per-observation mean with KL weight 1,
+matching the stated ELBO. The archived trainer instead mixes a batch sum with
+5 times a batch mean; its effective per-observation KL weight is 5/batch_size.
+The run manifest explicitly records these differences and other choices not
+specified in the main text. Fresh runs retain local checkpoints and fitted-GMM
+parameters for audit/resumption; **data and weights are not uploaded**.
+
+See [the fresh-run protocol](docs/fresh_reproduction.md) for comparison criteria
+and the complete recorded configuration. Basic-model examples below are separate
+from these manuscript experiments.
 
 ## Train the basic model without labels
 
@@ -178,7 +240,7 @@ must be reconstructed explicitly before loading their state dictionaries.
 ## Tests and releases
 
 ```bash
-python -m pip install '.[dev]'
+python -m pip install '.[dev,experiments]'
 python -m unittest discover -s tests -v
 python -m build
 python -m twine check dist/*
