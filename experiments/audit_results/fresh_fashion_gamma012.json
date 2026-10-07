@@ -1,0 +1,93 @@
+{
+  "protocol": "Recovered historical configuration; same-condition comparisons",
+  "scope": "Only listed runs. Does not verify the seven-noise average or all paper claims.",
+  "selection_note": "Digits/clothing use held-out refit labels for checkpoint selection, then report native scores.",
+  "psnr_note": "Self-clean decoded prototypes, historical 128x127 montage crop; not patient-level ground truth.",
+  "runs": [
+    {
+      "dataset": "fashion_mnist",
+      "gamma": 0.12,
+      "selected_epoch": 65,
+      "selection": "test_refit_accuracy",
+      "completed_epochs": 100,
+      "csv_sha256": "e596a8282f595630f2be82618a73df4d1275d5497eb31c078761577673dfd184",
+      "run_config_sha256": "3504b041e6d4ef4edecce13581994a88f9020000c6b5107825d176a19e0bdf2e",
+      "configuration": {
+        "dataset": "fashion_mnist",
+        "gamma": 0.12,
+        "epochs": 100,
+        "seed": 42,
+        "samples_per_class": 12800,
+        "device": "cuda:3",
+        "threads": 4,
+        "workers": 2,
+        "gmm_dtype": "original",
+        "train_silhouette_samples": 0
+      },
+      "inferred_legacy_defaults": {
+        "gmm_dtype": "Behavior of the launcher revision before this option was added",
+        "train_silhouette_samples": "Behavior of the launcher revision before this option was added"
+      },
+      "metrics": {
+        "train_loss": 380.565,
+        "train_loss_recon": 377.569,
+        "train_loss_elbo": 0.599,
+        "test_loss": 381.36,
+        "test_loss_recon": 378.371,
+        "test_loss_elbo": 0.598,
+        "train_refit_accuracy": 0.605,
+        "train_refit_nmi": 0.607,
+        "train_refit_ari": 0.469,
+        "test_refit_accuracy": 0.606,
+        "test_refit_nmi": 0.609,
+        "test_refit_ari": 0.47,
+        "train_stage_accuracy": 0.6,
+        "train_stage_nmi": 0.611,
+        "train_stage_ari": 0.454,
+        "test_stage_accuracy": 0.599,
+        "test_stage_nmi": 0.604,
+        "test_stage_ari": 0.449,
+        "train_stage_size_entropy": 0.9527,
+        "train_refit_size_entropy": 0.9692,
+        "train_stage_silhouette": 0.1843,
+        "train_refit_silhouette": 0.1618,
+        "train_stage_davies_bouldin": 1.6062,
+        "train_refit_davies_bouldin": 2.0416,
+        "test_stage_size_entropy": 0.955,
+        "test_refit_size_entropy": 0.9702,
+        "test_stage_silhouette": 0.1865,
+        "test_refit_silhouette": 0.1651,
+        "test_stage_davies_bouldin": 1.5851,
+        "test_refit_davies_bouldin": 2.0052
+      },
+      "comparison": {
+        "test_stage_accuracy": {
+          "fresh": 0.599,
+          "paper": 0.525,
+          "difference": 0.07399999999999995,
+          "absolute_difference": 0.07399999999999995,
+          "relative_difference": 0.14095238095238086,
+          "within_exploratory_band": false
+        },
+        "test_stage_ari": {
+          "fresh": 0.449,
+          "paper": 0.392,
+          "difference": 0.056999999999999995,
+          "absolute_difference": 0.056999999999999995,
+          "relative_difference": 0.14540816326530612,
+          "within_exploratory_band": false
+        },
+        "test_stage_nmi": {
+          "fresh": 0.604,
+          "paper": 0.571,
+          "difference": 0.03300000000000003,
+          "absolute_difference": 0.03300000000000003,
+          "relative_difference": 0.05779334500875662,
+          "within_exploratory_band": true
+        }
+      }
+    }
+  ],
+  "clean_runs": [],
+  "mri_aggregates": []
+}

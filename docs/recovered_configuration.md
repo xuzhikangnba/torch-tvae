@@ -58,8 +58,8 @@ epochs and RNG consumption; the portable reference launcher retains it.
 
 The exact historical source revision was not snapshotted within every run.
 Accordingly, these source-supported settings should not be described as
-independently logged facts. Fresh reruns are needed to validate the recovered
-recipe against reported metrics.
+independently logged facts. [Fresh reruns](fresh_results.md) now compare this
+recovered recipe with the reported gamma=0.12 metrics.
 
 The old batch-launch script mentions a `py37_pt18` environment in a comment,
 but the matched run headers do not record dependency versions. This is a clue,

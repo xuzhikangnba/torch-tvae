@@ -16,23 +16,24 @@ Version 0.3.1 includes two interfaces: `TVAE` is the basic single-component mode
 `tvae.reference.TVaDE28` and `TVaDE128` preserve the original multi-component
 models and checkpoint parameter names for 28x28 images and 128x128 MRI.
 
-**Reproduction status:** package tests and fresh checkpoint evaluations pass as
-software checks. An archive audit recovers the paper's reported assignment
-scores and all 91 entries checked in Table 1, but exact end-to-end paper
-reproduction is **not verified**: stored checkpoints differ from the selected
-epochs, and the manuscript's training description differs from the archived
-implementation. Read [the reproduction report](docs/reproduction.md) before
-interpreting these results. The basic `TVAE` is not a replacement for the paper
-experiment model. See also [the mathematical objective](docs/mathematics.md).
-The [recovered training configuration](docs/recovered_configuration.md) matches
-40 historical stdout logs to the exact CSVs supporting the paper's numbers.
+**Validation:** 21 software tests pass, and eight fresh 100-epoch runs cover
+MNIST/Fashion-MNIST at Cauchy gamma=0.12 and three MRI views at gamma=0/0.12.
+MNIST and aggregate MRI metrics are close to the same-condition paper values;
+Fashion-MNIST scores are higher, with ACC/ARI outside the declared numerical
+closeness bands. See [the actual fresh results](docs/fresh_results.md).
+This is **not a full-paper reproduction claim**: the seven-noise average and
+multi-seed comparisons were not newly rerun. An independent archive audit
+verifies 91 Table 1 entries. The [recovered configuration](docs/recovered_configuration.md)
+matches 40 historical logs to the paper's source CSVs and identifies differences
+from the manuscript's training wording. See [the audit](docs/reproduction.md)
+and [mathematical objective](docs/mathematics.md) for scope and assumptions.
 
 ## Install
 
 Python 3.10+ and PyTorch 2.1+ are required. Install the appropriate CPU/CUDA build
 of PyTorch for your machine before installing this package if needed.
 
-From the public repository, once available:
+From the public repository:
 
 ```bash
 python -m pip install "git+https://github.com/xuzhikangnba/torch-tvae.git"
@@ -102,8 +103,10 @@ with separate autoencoder/mixture learning rates (0.001/0.002), batch size 32,
 50 reconstruction-only pretraining epochs, and then 500 minibatch updates.
 This is the literal interpretation of the main text's “500 iterations.”
 `--main-epochs 450` or `--main-epochs 500` records the alternative durations
-mentioned elsewhere in the manuscript. These settings are being evaluated;
-successful execution is not evidence that paper metrics have been reproduced.
+mentioned elsewhere in the manuscript. Tests of these interpretations did not
+consistently match the paper, including native axial-MRI collapse. See
+[the fresh-run comparison](docs/fresh_results.md); use the recovered workflow
+above for the reported reference experiment.
 
 ```bash
 python -m pip install '.[experiments]'

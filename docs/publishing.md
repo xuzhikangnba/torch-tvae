@@ -14,7 +14,7 @@ the preprint is available. Do not invent an arXiv ID or DOI.
 
 ## GitHub
 
-Create an empty public repository named `torch-tvae` under `xuzhikangnba`.
+The public repository `xuzhikangnba/torch-tvae` is the publication destination.
 Push the tested source and tag the release after verifying CI. Keep datasets,
 checkpoints, local environments, and credentials outside the repository.
 

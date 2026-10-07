@@ -43,11 +43,19 @@ def read_run(path):
         if k.startswith(('train_', 'test_')) and pd.notna(v)
         and not (cfg['dataset'].startswith('oasis_') and k.endswith(('_accuracy', '_ari', '_nmi')))
     }
+    effective = {k: v for k, v in cfg.items() if k not in ('output', 'data_root')}
+    # The launcher's earlier revision had no precision/subsampling options.
+    # Keep the original manifest hash, and explicitly mark inferred defaults.
+    inferred = {}
+    for key, value in [('gmm_dtype', 'original'), ('train_silhouette_samples', 0)]:
+        if key not in effective:
+            effective[key] = value
+            inferred[key] = 'Behavior of the launcher revision before this option was added'
     record = dict(
         dataset=cfg['dataset'], gamma=cfg['gamma'], selected_epoch=int(selected.epoch),
         selection=metric, completed_epochs=epochs, csv_sha256=digest(files[0]),
         run_config_sha256=digest(path / 'run_config.json'),
-        configuration={k: v for k, v in cfg.items() if k not in ('output', 'data_root')},
+        configuration=effective, inferred_legacy_defaults=inferred,
         metrics=selected_metrics,
     )
     return cfg, files[0].parent, record

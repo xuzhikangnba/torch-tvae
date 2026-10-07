@@ -3,14 +3,15 @@
 Audit target: the author's `paper/20261006/neurips_2026.tex`, SHA256
 `2a77a16ff6252f272e6fb9e3d07f7c9a447c60ae5dce6ee0cfe06aa8aab9115d`.
 
-**Status: package functionality verified; exact end-to-end paper reproduction
-not verified.** See the machine-readable reports in `experiments/audit_results/`.
-This status must not be replaced with a generic “reproduces the paper” claim.
+**Status: package functionality and eight fresh 100-epoch runs completed.**
+The [fresh results](fresh_results.md) report same-condition numerical
+comparisons and their limits. Exact end-to-end reproduction of the whole paper
+is not verified. Machine-readable evidence is in `experiments/audit_results/`.
 
 Update: [the recovered configuration](recovered_configuration.md) now ties
 40 historical stdout logs to all 4,000 corresponding epoch losses in the
 paper's source CSVs. It directly confirms AdamW/0.001/32/100 epochs and the
-epoch-20 GMM overwrite. Fresh experiments are running to validate that recipe.
+epoch-20 GMM overwrite. Fresh experiments now validate the recorded scope below.
 
 ## Fresh MRI training completed
 
@@ -34,13 +35,17 @@ per-cluster PSNR in `experiments/audit_results/fresh_mri_gamma012.json`.
 
 These results validate this condition and recipe; they do not establish the
 seven-noise average, every baseline, or confidence intervals across seeds.
-MNIST/Fashion-MNIST runs with the same historical schedule are still in progress.
+MNIST/Fashion-MNIST runs with the same historical schedule have also completed;
+their metrics, including the larger positive Fashion-MNIST differences, are
+reported in [fresh_results.md](fresh_results.md).
 
 ## Completed checks
 
-- Installed non-editable 0.2.0 wheel, including the original 28x28 and 128x128
-  multi-component models. All 16 tests pass, including independent Monte Carlo
+- Installed non-editable 0.3.1 wheel, including the original 28x28 and 128x128
+  multi-component models. All 21 tests pass, including independent Monte Carlo
   joint-KL checks, gradients, Gaussian limit, training and checkpoint round trips.
+  A separate CPU check verifies bitwise-identical model tensors for four main
+  updates run continuously or resumed as three plus one.
 - Rechecked all 826 archived run logs against selected-epoch summaries.
 - Recovered native assignment ACC of 0.798285714 on MNIST and 0.555 on
   Fashion-MNIST over seven noisy conditions. The earlier audit incorrectly
@@ -93,8 +98,9 @@ It cannot certify the table's selected-epoch metrics. In particular the three
 early MRI checkpoints have collapsed native assignments; refitting a GMM is a
 different evaluation and must not be presented as native model separation.
 
-No full seed-controlled reproduction of the final experimental schedule, runtime
-benchmark, or five-seed confidence intervals was performed in this audit.
+No complete noise-grid reproduction, runtime benchmark, or five-seed confidence
+interval replication was performed in this audit. Fresh seed-42 runs cover the
+gamma=0.12 comparison and clean MRI reference conditions described above.
 Exact checkpoint replay needs the selected states and original data/noise/RNG
 protocol. New from-scratch benchmark runs must be labeled as new experiments.
 
