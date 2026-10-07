@@ -19,6 +19,7 @@ def main():
     rows = []
     for folder in args.runs:
         cfg = json.loads((folder / "run_config.json").read_text())
+        manifest = json.loads((folder / "data_manifest.json").read_text())
         actual = json.loads((folder / "final_metrics.json").read_text())["metrics"]["test"]
         if cfg["functionality_check"]:
             raise ValueError(f"Cannot compare functionality-only run {folder}")
@@ -35,7 +36,7 @@ def main():
                          "assignment": assignment, "metric": metric, "paper_condition": expected,
                          "fresh_final": value, "difference": delta, "tolerance": tolerance,
                          "within_band": delta is not None and abs(delta) <= tolerance,
-                         "split": cfg["split"], "pretrain_epochs": cfg["pretrain_epochs"],
+                         "split": manifest["split"], "pretrain_epochs": cfg["pretrain_epochs"],
                          "main_updates": cfg["main_updates"], "kl_weight": cfg["kl_weight"],
                          "selection": "fresh final endpoint versus archived selected epoch"})
     args.output.parent.mkdir(parents=True, exist_ok=True)
