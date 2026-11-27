@@ -13,3 +13,8 @@ experiments/reference/**/results*/
 *.npz
 *.npy
 .DS_Store
+
+# Local paper sources and notes (not part of the code release)
+/overleaf/
+/*.pdf
+/openreview_version.txt
