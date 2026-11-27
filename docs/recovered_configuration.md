@@ -72,6 +72,12 @@ they are not presented as the historical dependency versions.
 
 ## Manuscript reconciliation
 
+**Update (2026-11-26):** the final NeurIPS version now states AdamW, lr 1e-3
+for all parameters, weight decay 1e-4, batch size 32 and 100 epochs, matching
+the logs. The paragraph below describes the earlier draft. The split, the
+epoch-20 GMM initialization and the checkpoint-selection rule below are still
+not described in the final text.
+
 The current main-text optimizer, separate learning rates, and 50+500 schedule
 do not describe the matched historical runs. The checklist also alternates
 between 450 and 500 main epochs. Any released reproduction claim must identify

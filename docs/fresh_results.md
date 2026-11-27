@@ -103,8 +103,8 @@ The completed alternative endpoints and differences are retained in
 
 The full seven-noise average, multi-seed confidence intervals, all baselines,
 clinical analyses, and runtime claims have not been newly reproduced here.
-The earlier archive audit verifies reported aggregations separately. Before
-posting the preprint, the manuscript's optimizer, learning rates, schedule,
-split/selection description, and PSNR definition need reconciliation with the
-recovered implementation. No manuscript metric has been replaced with these
+The earlier archive audit verifies reported aggregations separately. The
+final NeurIPS version reconciles the optimizer, learning rate and schedule with
+the recovered implementation; the split and checkpoint-selection rule are still
+not described there. No manuscript metric has been replaced with these
 new measurements.
