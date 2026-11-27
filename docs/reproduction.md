@@ -1,4 +1,12 @@
-# Reproduction audit of the accepted Pro-t-VAE manuscript
+# Reproduction audit of the accepted Pro-t-VaDE manuscript
+
+> **Update (2026-11-26).** This audit was performed against an earlier draft
+> (`neurips_2026.tex`, 2026-10-06). The final NeurIPS version (OpenReview,
+> last modified 2026-11-18) states AdamW, lr 1e-3 for all parameters, weight
+> decay 1e-4, batch size 32, 100 epochs and ν_c initialized at 5, matching the
+> recovered configuration. Its Table 1 and Fig. 3 values are unchanged from the
+> audited draft. It still does not describe the epoch-20 GMM initialization,
+> the 80/20 split, or label-based checkpoint selection.
 
 Audit target: the author's `paper/20261006/neurips_2026.tex`, SHA256
 `2a77a16ff6252f272e6fb9e3d07f7c9a447c60ae5dce6ee0cfe06aa8aab9115d`.
@@ -65,6 +73,9 @@ reported in [fresh_results.md](fresh_results.md).
   These short runs are not benchmark reproduction or convergence tests.
 
 ## Unresolved differences
+
+As of the audited draft. The optimizer, learning-rate and schedule rows are
+resolved in the final version (see the note at the top).
 
 | Topic | Accepted manuscript | Available experiment source/artifacts |
 |---|---|---|
